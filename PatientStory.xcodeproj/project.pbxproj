@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2529051B759988007CC19C /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529041B759988007CC19C /* HealthKit.framework */; };
+		9A2529081B7599AA007CC19C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529071B7599AA007CC19C /* StoreKit.framework */; };
+		9A25290C1B75A3B4007CC19C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25290B1B75A3B4007CC19C /* AudioToolbox.framework */; };
+		9A25290E1B75A3BF007CC19C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25290D1B75A3BF007CC19C /* CFNetwork.framework */; };
+		9A2529101B75A3CC007CC19C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25290F1B75A3CC007CC19C /* CoreGraphics.framework */; };
+		9A2529121B75A3D7007CC19C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529111B75A3D7007CC19C /* QuartzCore.framework */; };
+		9A2529141B75A3E2007CC19C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529131B75A3E2007CC19C /* Security.framework */; };
+		9A2529161B75A40C007CC19C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529151B75A40C007CC19C /* SystemConfiguration.framework */; };
+		9A2529181B75A417007CC19C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529171B75A417007CC19C /* libz.dylib */; };
+		9A25291A1B75A430007CC19C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529191B75A430007CC19C /* libsqlite3.dylib */; };
+		9A25291C1B75A441007CC19C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25291B1B75A441007CC19C /* Accounts.framework */; };
+		9A25291E1B75A44E007CC19C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A25291D1B75A44E007CC19C /* Social.framework */; };
+		9A2529291B75A9FD007CC19C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529231B75A9FD007CC19C /* Bolts.framework */; };
+		9A25292A1B75A9FE007CC19C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529241B75A9FD007CC19C /* Parse.framework */; };
+		9A25292B1B75A9FE007CC19C /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529251B75A9FD007CC19C /* ParseCrashReporting.framework */; };
+		9A25292C1B75A9FE007CC19C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529261B75A9FD007CC19C /* ParseFacebookUtils.framework */; };
+		9A25292D1B75A9FE007CC19C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529271B75A9FD007CC19C /* ParseFacebookUtilsV4.framework */; };
+		9A25292E1B75A9FE007CC19C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529281B75A9FD007CC19C /* ParseUI.framework */; };
 		9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */; };
 		9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */; };
 		9A5744E31B6F7FBC004F392C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744E21B6F7FBC004F392C /* ViewController.swift */; };
@@ -27,6 +45,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A2529041B759988007CC19C /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9A2529061B759988007CC19C /* PatientStory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PatientStory.entitlements; sourceTree = "<group>"; };
+		9A2529071B7599AA007CC19C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9A25290B1B75A3B4007CC19C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9A25290D1B75A3BF007CC19C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9A25290F1B75A3CC007CC19C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A2529111B75A3D7007CC19C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A2529131B75A3E2007CC19C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A2529151B75A40C007CC19C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A2529171B75A417007CC19C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9A2529191B75A430007CC19C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9A25291B1B75A441007CC19C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9A25291D1B75A44E007CC19C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		9A25291F1B75A5B9007CC19C /* PatientStory-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientStory-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A2529231B75A9FD007CC19C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		9A2529241B75A9FD007CC19C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		9A2529251B75A9FD007CC19C /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		9A2529261B75A9FD007CC19C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		9A2529271B75A9FD007CC19C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		9A2529281B75A9FD007CC19C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
 		9A5744D81B6F7FBC004F392C /* PatientStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744DC1B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +83,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A25292E1B75A9FE007CC19C /* ParseUI.framework in Frameworks */,
+				9A25291E1B75A44E007CC19C /* Social.framework in Frameworks */,
+				9A25292B1B75A9FE007CC19C /* ParseCrashReporting.framework in Frameworks */,
+				9A25291C1B75A441007CC19C /* Accounts.framework in Frameworks */,
+				9A25291A1B75A430007CC19C /* libsqlite3.dylib in Frameworks */,
+				9A2529181B75A417007CC19C /* libz.dylib in Frameworks */,
+				9A2529161B75A40C007CC19C /* SystemConfiguration.framework in Frameworks */,
+				9A2529141B75A3E2007CC19C /* Security.framework in Frameworks */,
+				9A2529121B75A3D7007CC19C /* QuartzCore.framework in Frameworks */,
+				9A2529291B75A9FD007CC19C /* Bolts.framework in Frameworks */,
+				9A2529101B75A3CC007CC19C /* CoreGraphics.framework in Frameworks */,
+				9A25290E1B75A3BF007CC19C /* CFNetwork.framework in Frameworks */,
+				9A25292A1B75A9FE007CC19C /* Parse.framework in Frameworks */,
+				9A25290C1B75A3B4007CC19C /* AudioToolbox.framework in Frameworks */,
+				9A2529051B759988007CC19C /* HealthKit.framework in Frameworks */,
+				9A25292D1B75A9FE007CC19C /* ParseFacebookUtilsV4.framework in Frameworks */,
+				9A25292C1B75A9FE007CC19C /* ParseFacebookUtils.framework in Frameworks */,
+				9A2529081B7599AA007CC19C /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +114,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A2529221B75A772007CC19C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A2529171B75A417007CC19C /* libz.dylib */,
+				9A2529151B75A40C007CC19C /* SystemConfiguration.framework */,
+				9A2529131B75A3E2007CC19C /* Security.framework */,
+				9A2529111B75A3D7007CC19C /* QuartzCore.framework */,
+				9A25290F1B75A3CC007CC19C /* CoreGraphics.framework */,
+				9A25290D1B75A3BF007CC19C /* CFNetwork.framework */,
+				9A25290B1B75A3B4007CC19C /* AudioToolbox.framework */,
+				9A2529231B75A9FD007CC19C /* Bolts.framework */,
+				9A2529241B75A9FD007CC19C /* Parse.framework */,
+				9A2529251B75A9FD007CC19C /* ParseCrashReporting.framework */,
+				9A2529261B75A9FD007CC19C /* ParseFacebookUtils.framework */,
+				9A2529271B75A9FD007CC19C /* ParseFacebookUtilsV4.framework */,
+				9A2529281B75A9FD007CC19C /* ParseUI.framework */,
+				9A2529071B7599AA007CC19C /* StoreKit.framework */,
+				9A2529041B759988007CC19C /* HealthKit.framework */,
+				9A2529191B75A430007CC19C /* libsqlite3.dylib */,
+				9A25291B1B75A441007CC19C /* Accounts.framework */,
+				9A25291D1B75A44E007CC19C /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A5744CF1B6F7FBB004F392C = {
 			isa = PBXGroup;
 			children = (
+				9A2529221B75A772007CC19C /* Frameworks */,
 				9A5744DA1B6F7FBC004F392C /* PatientStory */,
 				9A5744F31B6F7FBC004F392C /* PatientStoryTests */,
 				9A5744D91B6F7FBC004F392C /* Products */,
@@ -79,12 +161,14 @@
 		9A5744DA1B6F7FBC004F392C /* PatientStory */ = {
 			isa = PBXGroup;
 			children = (
+				9A2529061B759988007CC19C /* PatientStory.entitlements */,
 				9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */,
 				9A5744E21B6F7FBC004F392C /* ViewController.swift */,
 				9A5744E41B6F7FBC004F392C /* Main.storyboard */,
 				9A5744E71B6F7FBC004F392C /* Images.xcassets */,
 				9A5744E91B6F7FBC004F392C /* LaunchScreen.xib */,
 				9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */,
+				9A25291F1B75A5B9007CC19C /* PatientStory-Bridging-Header.h */,
 				9A5744DB1B6F7FBC004F392C /* Supporting Files */,
 			);
 			path = PatientStory;
@@ -164,6 +248,21 @@
 				TargetAttributes = {
 					9A5744D71B6F7FBB004F392C = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = R6G87ZFKDH;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					9A5744EF1B6F7FBC004F392C = {
 						CreatedOnToolsVersion = 6.4;
@@ -344,9 +443,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PatientStory/PatientStory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = PatientStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientStory/PatientStory-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +464,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PatientStory/PatientStory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1.7.5",
+				);
 				INFOPLIST_FILE = PatientStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientStory/PatientStory-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +533,7 @@
 				9A5744FC1B6F7FBC004F392C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A5744FD1B6F7FBC004F392C /* Build configuration list for PBXNativeTarget "PatientStoryTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +542,7 @@
 				9A5744FF1B6F7FBC004F392C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
