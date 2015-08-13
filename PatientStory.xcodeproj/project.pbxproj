@@ -25,9 +25,16 @@
 		9A2529381B7608B0007CC19C /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529321B7608AF007CC19C /* ParseFacebookUtils.framework */; };
 		9A2529391B7608B0007CC19C /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529331B7608AF007CC19C /* ParseFacebookUtilsV4.framework */; };
 		9A25293A1B7608B0007CC19C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2529341B7608AF007CC19C /* ParseUI.framework */; };
+		9A25293D1B7CAB46007CC19C /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A25293C1B7CAB46007CC19C /* 008.png */; };
+		9A25293F1B7CAB70007CC19C /* 051.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A25293E1B7CAB70007CC19C /* 051.png */; };
+		9A2529411B7CAB8D007CC19C /* 087.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2529401B7CAB8D007CC19C /* 087.png */; };
+		9A2529431B7CABD7007CC19C /* 093.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2529421B7CABD7007CC19C /* 093.png */; };
+		9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2529461B7CB467007CC19C /* HomeViewController.swift */; };
+		9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2529481B7CB477007CC19C /* DataViewController.swift */; };
+		9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */; };
+		9A25294D1B7CB4A0007CC19C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */; };
 		9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */; };
 		9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */; };
-		9A5744E31B6F7FBC004F392C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744E21B6F7FBC004F392C /* ViewController.swift */; };
 		9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E41B6F7FBC004F392C /* Main.storyboard */; };
 		9A5744E81B6F7FBC004F392C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E71B6F7FBC004F392C /* Images.xcassets */; };
 		9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E91B6F7FBC004F392C /* LaunchScreen.xib */; };
@@ -65,11 +72,18 @@
 		9A2529321B7608AF007CC19C /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "PatientStory/parse-library-1.7.5/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 		9A2529331B7608AF007CC19C /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "PatientStory/parse-library-1.7.5/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 		9A2529341B7608AF007CC19C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "PatientStory/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		9A25293C1B7CAB46007CC19C /* 008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 008.png; sourceTree = "<group>"; };
+		9A25293E1B7CAB70007CC19C /* 051.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 051.png; sourceTree = "<group>"; };
+		9A2529401B7CAB8D007CC19C /* 087.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 087.png; sourceTree = "<group>"; };
+		9A2529421B7CABD7007CC19C /* 093.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 093.png; sourceTree = "<group>"; };
+		9A2529461B7CB467007CC19C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A2529481B7CB477007CC19C /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		9A5744D81B6F7FBC004F392C /* PatientStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744DC1B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5744E01B6F7FBC004F392C /* PatientStory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PatientStory.xcdatamodel; sourceTree = "<group>"; };
-		9A5744E21B6F7FBC004F392C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A5744E51B6F7FBC004F392C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A5744E71B6F7FBC004F392C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A5744EA1B6F7FBC004F392C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -139,6 +153,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A25293B1B7CAAFE007CC19C /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				9A2529421B7CABD7007CC19C /* 093.png */,
+				9A2529401B7CAB8D007CC19C /* 087.png */,
+				9A25293E1B7CAB70007CC19C /* 051.png */,
+				9A25293C1B7CAB46007CC19C /* 008.png */,
+			);
+			name = photos;
+			sourceTree = "<group>";
+		};
 		9A5744CF1B6F7FBB004F392C = {
 			isa = PBXGroup;
 			children = (
@@ -163,7 +188,10 @@
 			children = (
 				9A2529061B759988007CC19C /* PatientStory.entitlements */,
 				9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */,
-				9A5744E21B6F7FBC004F392C /* ViewController.swift */,
+				9A2529461B7CB467007CC19C /* HomeViewController.swift */,
+				9A2529481B7CB477007CC19C /* DataViewController.swift */,
+				9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */,
+				9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */,
 				9A5744E41B6F7FBC004F392C /* Main.storyboard */,
 				9A5744E71B6F7FBC004F392C /* Images.xcassets */,
 				9A5744E91B6F7FBC004F392C /* LaunchScreen.xib */,
@@ -177,6 +205,7 @@
 		9A5744DB1B6F7FBC004F392C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A25293B1B7CAAFE007CC19C /* photos */,
 				9A5744DC1B6F7FBC004F392C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -296,7 +325,11 @@
 			files = (
 				9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */,
 				9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */,
+				9A25293D1B7CAB46007CC19C /* 008.png in Resources */,
+				9A2529411B7CAB8D007CC19C /* 087.png in Resources */,
 				9A5744E81B6F7FBC004F392C /* Images.xcassets in Resources */,
+				9A2529431B7CABD7007CC19C /* 093.png in Resources */,
+				9A25293F1B7CAB70007CC19C /* 051.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,9 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5744E31B6F7FBC004F392C /* ViewController.swift in Sources */,
+				9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */,
+				9A25294D1B7CB4A0007CC19C /* UsersViewController.swift in Sources */,
 				9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */,
 				9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */,
+				9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */,
+				9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
