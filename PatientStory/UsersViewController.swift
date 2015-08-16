@@ -10,6 +10,9 @@ import UIKit
 
 class UsersViewController: UIViewController, UITableViewDelegate {
 
+    @IBOutlet var tableView :UITableView?
+    var cellPattern :Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +24,28 @@ class UsersViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        var detailVC :UsersDetailViewController = segue.destinationViewController as! UsersDetailViewController
+        if (segue.identifier == "userName_setting"){
+            cellPattern = 1
+        } if else (segue.identifier == "medicineName_setting"){
+            self.cellPattern = 2
+        }; if else (segue.identifier == "ageAndSex_setting"){
+            self.cellPattern = 3
+        }; if else (segue.identifier == "medicalHistories_setting"){
+            self.cellPattern = 4
+        }; else {
+            self.cellPattern = 0
+        }
+    
+        detailVC.cellPattern = cellPattern
+        
     }
-    */
+    
 
 }

@@ -332,7 +332,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="5Lq-GJ-PaI" kind="show" id="pmQ-KK-W2W"/>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" identifier="medicalHistory_setting" id="pmQ-KK-W2W"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -372,10 +372,10 @@
             </objects>
             <point key="canvasLocation" x="1925" y="835"/>
         </scene>
-        <!--View Controller-->
+        <!--Users Detail View Controller-->
         <scene sceneID="lqr-W3-dwh">
             <objects>
-                <viewController id="5Lq-GJ-PaI" sceneMemberID="viewController">
+                <viewController id="5Lq-GJ-PaI" customClass="UsersDetailViewController" customModule="PatientStory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qJC-d3-inF"/>
                         <viewControllerLayoutGuide type="bottom" id="gF5-b1-ka9"/>
@@ -399,6 +399,10 @@
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="pTe-lW-HkD" id="EPp-fq-AMq"/>
+                        <outlet property="detailTextField" destination="CkW-TR-STF" id="tqJ-At-clG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6da-Uv-VIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,6 +529,6 @@
         <image name="xel100ptp_2_s.jpg" width="144" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pmQ-KK-W2W"/>
+        <segue reference="eTJ-cE-JGr"/>
     </inferredMetricsTieBreakers>
 </document>
