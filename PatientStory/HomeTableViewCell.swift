@@ -12,8 +12,8 @@ class HomeTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var medicine_nameLabel: UILabel!
-    @IBOutlet weak var usageLabel: UILabel!
-    @IBOutlet weak var dateLable: UILabel!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var endDateLable: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

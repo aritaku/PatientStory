@@ -45,6 +45,7 @@
 		9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */; };
 		9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A931B7F95BE00EB2A42 /* Medicine.swift */; };
 		9AD19A961B7FA5BC00EB2A42 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A951B7FA5BC00EB2A42 /* HomeTableViewCell.swift */; };
+		9AD19A981B80602400EB2A42 /* xel100ptp_2_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9AD19A971B80602400EB2A42 /* xel100ptp_2_s.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRegistViewController.swift; sourceTree = "<group>"; };
 		9AD19A931B7F95BE00EB2A42 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		9AD19A951B7FA5BC00EB2A42 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		9AD19A971B80602400EB2A42 /* xel100ptp_2_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xel100ptp_2_s.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				9AD19A8D1B7F074E00EB2A42 /* himan10_obaasan.png */,
 				9A2529421B7CABD7007CC19C /* 093.png */,
+				9AD19A971B80602400EB2A42 /* xel100ptp_2_s.jpg */,
 				9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */,
 				9A2529401B7CAB8D007CC19C /* 087.png */,
 				9A25293E1B7CAB70007CC19C /* 051.png */,
@@ -350,6 +353,7 @@
 				9A2529431B7CABD7007CC19C /* 093.png in Resources */,
 				9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */,
 				9A25293F1B7CAB70007CC19C /* 051.png in Resources */,
+				9AD19A981B80602400EB2A42 /* xel100ptp_2_s.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

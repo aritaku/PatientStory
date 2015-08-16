@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="PatientStory" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,80 +17,96 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-Ej-5Vr">
-                                <rect key="frame" x="59" y="433" width="60" height="30"/>
+                                <rect key="frame" x="54" y="412" width="60" height="30"/>
                                 <state key="normal" title="服薬記録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAC-Ic-VwS">
-                                <rect key="frame" x="165" y="433" width="105" height="30"/>
+                                <rect key="frame" x="168" y="412" width="105" height="30"/>
                                 <state key="normal" title="副作用チェック">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPz-P8-WXQ">
-                                <rect key="frame" x="116" y="457" width="60" height="30"/>
+                                <rect key="frame" x="130" y="450" width="60" height="30"/>
                                 <state key="normal" title="薬を登録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bu1-V0-Znd" kind="showDetail" id="wtN-w9-ANf"/>
+                                    <segue destination="Bu1-V0-Znd" kind="show" identifier="toRegistMedicineView" id="wtN-w9-ANf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="服薬・副作用履歴" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-7O-Gvr">
-                                <rect key="frame" x="16" y="207" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="服用中のお薬" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KU-rQ-7tr">
+                                <rect key="frame" x="8" y="70" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GMr-wt-QdL">
-                                <rect key="frame" x="0.0" y="64" width="330" height="124"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N12-om-82b">
+                                <rect key="frame" x="0.0" y="99" width="320" height="119"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="medicine_cell" rowHeight="94" id="4Xf-co-09h" customClass="HomeTableViewCell" customModule="PatientStory" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="medicine_cell" rowHeight="69" id="gia-Cw-FMf" customClass="HomeTableViewCell" customModule="PatientStory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="medicine_name" tableViewCell="4Xf-co-09h" id="dpp-u5-50s">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gia-Cw-FMf" id="hgC-Jb-MgF">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rMn-YS-Jcc">
-                                                    <rect key="frame" x="8" y="8" width="73" height="75"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="xel100ptp_2_s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="drR-LP-wg7">
+                                                    <rect key="frame" x="8" y="4" width="59" height="60"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用法用量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prP-8F-1FD">
-                                                    <rect key="frame" x="89" y="36" width="68" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お薬名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-fq-sf6">
+                                                    <rect key="frame" x="75" y="8" width="200" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="開始日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxZ-bR-pRT">
+                                                    <rect key="frame" x="75" y="37" width="51" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="開始日~終了日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-CQ-bbD">
-                                                    <rect key="frame" x="89" y="62" width="113" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="~" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsd-u0-65T">
+                                                    <rect key="frame" x="134" y="37" width="11" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お薬の名前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxE-Kt-Qao">
-                                                    <rect key="frame" x="89" y="8" width="161" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="終了日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="din-cm-t0N">
+                                                    <rect key="frame" x="163" y="37" width="51" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="dateLable" destination="nU3-CQ-bbD" id="hQg-tz-r3N"/>
-                                            <outlet property="medicine_nameLabel" destination="CxE-Kt-Qao" id="6xY-Gq-Z4k"/>
-                                            <outlet property="usageLabel" destination="prP-8F-1FD" id="XPp-Ff-ogy"/>
+                                            <outlet property="endDateLable" destination="din-cm-t0N" id="Oaw-Fb-sgs"/>
+                                            <outlet property="medicine_nameLabel" destination="5Ax-fq-sf6" id="oWU-L6-J5P"/>
+                                            <outlet property="startDateLabel" destination="OxZ-bR-pRT" id="upz-xx-oUw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="服薬・副作用履歴" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-7O-Gvr">
+                                <rect key="frame" x="8" y="226" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.69803921568627447" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="z2t-0s-kyr"/>
+                    <navigationItem key="navigationItem" title="Home" id="z2t-0s-kyr">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="0Ml-UJ-yNb"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="tableView" destination="GMr-wt-QdL" id="vuD-bC-htG"/>
+                        <outlet property="tableView" destination="N12-om-82b" id="f61-ft-GZw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -163,7 +179,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -177,7 +193,7 @@
             </objects>
             <point key="canvasLocation" x="2348" y="-1077"/>
         </scene>
-        <!--Time Line View Controller-->
+        <!--TimeLine-->
         <scene sceneID="Xyf-h3-fOv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="71Z-31-G6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,7 +208,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-PK-Avd">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timelineCell" id="vNj-vy-fOb">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -206,22 +222,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GhB-gZ-jWz"/>
+                    <navigationItem key="navigationItem" title="TimeLine" id="GhB-gZ-jWz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="bQD-V5-y2v"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="ZlC-6i-pQN"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1925" y="190"/>
         </scene>
-        <!--Table View Controller-->
+        <!--設定-->
         <scene sceneID="QNk-eC-zLB">
             <objects>
                 <tableViewController id="IEp-xI-e3W" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c7S-vc-scU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c7S-vc-scU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="Tkd-LL-8op">
+                            <tableViewSection headerTitle="ユーザー設定" id="Tkd-LL-8op">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wap-Fn-MMN">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -237,6 +259,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" id="IuM-Gz-634"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="n4Q-BF-Pgt">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -244,7 +269,43 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n4Q-BF-Pgt" id="Ygz-bh-MPh">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年齢・性別" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5g-Aq-wUX">
+                                                    <rect key="frame" x="18" y="14" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" id="FWd-ue-JBl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jq2-Sb-Anz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jq2-Sb-Anz" id="bri-Ke-eaD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お薬名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k28-aT-9FZ">
+                                                    <rect key="frame" x="18" y="11" width="51" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" id="PYj-er-B3i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fuY-n5-XIb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuY-n5-XIb" id="T7h-KZ-NEM">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="疾患名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvP-uD-hNb">
                                                     <rect key="frame" x="21" y="11" width="51" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -252,27 +313,27 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jq2-Sb-Anz">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jq2-Sb-Anz" id="bri-Ke-eaD">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fuY-n5-XIb">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuY-n5-XIb" id="T7h-KZ-NEM">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" id="eTJ-cE-JGr"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mLA-Bn-sLn">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mLA-Bn-sLn" id="7lo-fQ-4I9">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="既往歴" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-z7-PhU">
+                                                    <rect key="frame" x="22" y="11" width="51" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5Lq-GJ-PaI" kind="show" id="pmQ-KK-W2W"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -304,12 +365,44 @@
                             <outlet property="delegate" destination="IEp-xI-e3W" id="Wae-lO-Jxn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="CYZ-Xk-xF8"/>
+                    <navigationItem key="navigationItem" title="設定" id="krx-mS-lzT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hgs-YE-ban" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1925" y="835"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lqr-W3-dwh">
+            <objects>
+                <viewController id="5Lq-GJ-PaI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qJC-d3-inF"/>
+                        <viewControllerLayoutGuide type="bottom" id="gF5-b1-ka9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QiR-wG-0ei">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTe-lW-HkD">
+                                <rect key="frame" x="28" y="110" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-TR-STF">
+                                <rect key="frame" x="28" y="139" width="264" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6da-Uv-VIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311" y="835"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="6F2-Ni-YT5">
@@ -336,7 +429,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="eMZ-xO-xRM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -429,5 +522,9 @@
         <image name="008.png" width="40" height="40"/>
         <image name="051.png" width="40" height="40"/>
         <image name="087.png" width="40" height="40"/>
+        <image name="xel100ptp_2_s.jpg" width="144" height="144"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pmQ-KK-W2W"/>
+    </inferredMetricsTieBreakers>
 </document>
