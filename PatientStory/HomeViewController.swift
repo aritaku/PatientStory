@@ -16,6 +16,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var tableView:UITableView!
     @IBOutlet var collectionView :UICollectionView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +31,50 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewDidAppear(animated: Bool) {
+        //login, singinの処理
+        /*
+        if !((PFUser.currentUser()) != nil) {
+            
+            var loginAlert:UIAlertController = UIAlertController(title: "Sign UP / Loign", message: "Plase sign up or login", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            loginAlert.addTextFieldWithConfigurationHandler({
+                textfield in
+                textfield.placeholder = "Your username"
+            })
+            
+            loginAlert.addTextFieldWithConfigurationHandler({
+                textfield in
+                textfield.placeholder = "Your Password"
+                textfield.secureTextEntry = true
+            })
+            
+            loginAlert.addAction(UIAlertAction(title: "Login", style: UIAlertActionStyle.Default, handler: {
+                alertAction in
+                let textFields:NSArray = (loginAlert.textFields as! NSArray)
+                let usernameTextfield:UITextField = textFields.objectAtIndex(0) as! UITextField
+                let passwordTextfield:UITextField = textFields.objectAtIndex(1) as! UITextField
+                
+                var tweeter:PFUser = PFUser()
+                tweeter.username = usernameTextfield.text
+                tweeter.password = passwordTextfield.text
+                
+                tweeter.signUpInBackgroundWithBlock{
+                    (success:Bool,error:NSError!) -> Void in
+                    if !error{
+                        println("Sing up succeeded!")
+                    }else {
+                        let errorString = error.userInfo["error"] as NSString
+                        println(errorString)
+                    }
+                }
+            }))
+            
+        self.presentViewController(loginAlert, animated: true, completion: nil)
+        }else{
+            self.currentUsername.text = "Logged in as \(PFUser.currentUser().username)"
+        }
+        */
+        
         tableView.reloadData()
         readData()
     }
@@ -51,7 +97,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell :HomeTableViewCell = tableView.dequeueReusableCellWithIdentifier("medicine_cell", forIndexPath: indexPath) as! HomeTableViewCell
         cell.medicine_nameLabel.text = "\(medicineNames[indexPath.row])"
-        
         return cell
     }
     
@@ -67,6 +112,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let collectionCell :HomeCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("historyCell", forIndexPath: indexPath) as! HomeCollectionViewCell
         
+        let now = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") // ロケールの設定
+        
+        dateFormatter.timeStyle = .NoStyle // 時刻だけ表示させない
+        dateFormatter.dateStyle = .ShortStyle
+        println(dateFormatter.stringFromDate(now)) // -> 2014年6月24日火曜日
+        
+        let editNow = dateFormatter.stringFromDate(now).substringFromIndex(5)
+        
+        collectionCell.dateLabel?.text = " \(editNow)"
         return collectionCell
     }
     

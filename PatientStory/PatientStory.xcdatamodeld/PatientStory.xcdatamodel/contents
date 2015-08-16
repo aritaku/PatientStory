@@ -13,7 +13,7 @@
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Medicine" positionX="214" positionY="-39" width="128" height="105"/>
         <element name="User" positionX="-99" positionY="-40" width="128" height="103"/>
-        <element name="Medicine" positionX="214" positionY="-39" width="128" height="103"/>
     </elements>
 </model>

@@ -115,11 +115,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="49" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-gK-Ot3">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facescale1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ORa-gK-Ot3">
                                                     <rect key="frame" x="5" y="92" width="39" height="39"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36r-Cz-Swt">
-                                                    <rect key="frame" x="3" y="21" width="46" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8/2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36r-Cz-Swt">
+                                                    <rect key="frame" x="3" y="0.0" width="46" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -142,7 +142,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.31764705882352939" green="0.69803921568627447" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.57647058823529407" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="z2t-0s-kyr">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="compose" id="0Ml-UJ-yNb"/>
@@ -570,6 +570,7 @@
         <image name="008.png" width="40" height="40"/>
         <image name="051.png" width="40" height="40"/>
         <image name="087.png" width="40" height="40"/>
+        <image name="facescale1.png" width="132" height="172"/>
         <image name="xel100ptp_2_s.jpg" width="144" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>
