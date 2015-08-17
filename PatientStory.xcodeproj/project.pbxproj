@@ -35,7 +35,6 @@
 		9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2529461B7CB467007CC19C /* HomeViewController.swift */; };
 		9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2529481B7CB477007CC19C /* DataViewController.swift */; };
 		9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */; };
-		9A25294D1B7CB4A0007CC19C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */; };
 		9A25294F1B7DC016007CC19C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294E1B7DC016007CC19C /* User.swift */; };
 		9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */; };
 		9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */; };
@@ -43,6 +42,9 @@
 		9A5744E81B6F7FBC004F392C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E71B6F7FBC004F392C /* Images.xcassets */; };
 		9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E91B6F7FBC004F392C /* LaunchScreen.xib */; };
 		9A5744F71B6F7FBC004F392C /* PatientStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */; };
+		9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */; };
+		9A8F2C641B82854100B00A8B /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */; };
+		9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */; };
 		9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */; };
 		9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */; };
 		9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A931B7F95BE00EB2A42 /* Medicine.swift */; };
@@ -92,7 +94,6 @@
 		9A2529461B7CB467007CC19C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9A2529481B7CB477007CC19C /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
-		9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		9A25294E1B7DC016007CC19C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A5744D81B6F7FBC004F392C /* PatientStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744DC1B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +105,9 @@
 		9A5744F01B6F7FBC004F392C /* PatientStoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatientStoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744F51B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientStoryTests.swift; sourceTree = "<group>"; };
+		9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
+		9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
 		9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xeloda_handbook.png; sourceTree = "<group>"; };
 		9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRegistViewController.swift; sourceTree = "<group>"; };
 		9AD19A931B7F95BE00EB2A42 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */,
+				9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */,
 			);
 			name = TimeLine;
 			sourceTree = "<group>";
@@ -187,7 +192,7 @@
 		9A1DC9F61B80963C000887A2 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				9A25294C1B7CB4A0007CC19C /* UsersViewController.swift */,
+				9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */,
 				9AD19A9B1B807D5100EB2A42 /* UsersDetailViewController.swift */,
 			);
 			name = Users;
@@ -257,6 +262,7 @@
 			children = (
 				9A2529061B759988007CC19C /* PatientStory.entitlements */,
 				9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */,
+				9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */,
 				9A1DC9F21B8095F0000887A2 /* Home */,
 				9A1DC9F31B809601000887A2 /* Data */,
 				9A1DC9F41B80960E000887A2 /* TimeLine */,
@@ -422,9 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */,
+				9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */,
 				9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */,
+				9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */,
 				9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */,
-				9A25294D1B7CB4A0007CC19C /* UsersViewController.swift in Sources */,
 				9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */,
 				9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */,
 				9AD19A961B7FA5BC00EB2A42 /* HomeTableViewCell.swift in Sources */,
@@ -432,6 +439,7 @@
 				9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */,
 				9AD19A9C1B807D5100EB2A42 /* UsersDetailViewController.swift in Sources */,
 				9A25294F1B7DC016007CC19C /* User.swift in Sources */,
+				9A8F2C641B82854100B00A8B /* UsersTableViewController.swift in Sources */,
 				9A1DC9F81B809755000887A2 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

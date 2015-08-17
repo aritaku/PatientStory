@@ -8,13 +8,14 @@
 
 import UIKit
 
-class TimeLineViewController: UIViewController, UITableViewDelegate {
+class TimeLineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //self.navigationController?.navigationBar.barTintColor = UIColor.greenColor()
         // Do any additional setup after loading the view.
     }
 
@@ -23,7 +24,25 @@ class TimeLineViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 81/255.0, green: 178/255.0, blue: 172/255.0, alpha: 1.0)
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell :TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("timelineCell", forIndexPath: indexPath) as! TimeLineTableViewCell
+        
+        
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 
