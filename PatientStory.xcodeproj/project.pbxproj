@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */; };
 		9A1DC9F81B809755000887A2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DC9F71B809754000887A2 /* HomeCollectionViewCell.swift */; };
 		9A1DC9FA1B809CE6000887A2 /* facescale1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DC9F91B809CE6000887A2 /* facescale1.png */; };
 		9A1DC9FC1B809CFB000887A2 /* facescale5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DC9FB1B809CFB000887A2 /* facescale5.png */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A1DC9F71B809754000887A2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A1DC9F91B809CE6000887A2 /* facescale1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facescale1.png; sourceTree = "<group>"; };
 		9A1DC9FB1B809CFB000887A2 /* facescale5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facescale5.png; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2529481B7CB477007CC19C /* DataViewController.swift */,
+				9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */,
 				9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */,
 				9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */,
+				9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */,
 				9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */,
 				9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */,
 				9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */,
