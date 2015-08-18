@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A3576299-AE21-4E0B-B5B1-470C9FBB3484</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PatientStory</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>AE3D0BA4DB512EF07154EE60D4281C0118A69E23</key>
 		<string>https://github.com/aritaku/PatientStory.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PatientStory.xcodeproj/project.xcworkspace</string>
+	<string>PatientStory.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>AE3D0BA4DB512EF07154EE60D4281C0118A69E23</key>

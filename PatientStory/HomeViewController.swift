@@ -30,7 +30,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 81/255.0, green: 178/255.0, blue: 172/255.0, alpha: 0.5)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 81.0/256.0, green: 178.0/256.0, blue: 172.0/256.0, alpha: 1.0)
         
         tableView.reloadData()
         readData()

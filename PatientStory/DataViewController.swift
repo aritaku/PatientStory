@@ -40,7 +40,7 @@ class DataViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell :DataCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("dataCell", forIndexPath: indexPath)
+        let cell :DataCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("dataCell", forIndexPath: indexPath) as! DataCollectionViewCell
         return cell
     }
     
