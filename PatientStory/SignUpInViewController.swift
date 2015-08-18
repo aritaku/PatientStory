@@ -18,17 +18,17 @@ class SignUpInViewController: UIViewController, UITextFieldDelegate {
     @IBAction func signUp(sender: AnyObject) {
        
         //Build the terms and conditions alert
-        let alertController = UIAlertController(title: "Agree to terms and condition",
-            message: "Click I Agree to signal that you agree to the  End User Licence",
+        let alertController = UIAlertController(title: "利用規約の確認",
+            message: "利用規約に同意しますか？",
             preferredStyle: UIAlertControllerStyle.Alert
         )
         
-        alertController.addAction(UIAlertAction(title: "I Agree",
+        alertController.addAction(UIAlertAction(title: "同意します",
             style: UIAlertActionStyle.Default,
             handler: { alertController in self.processSignUp()})
         )
         
-        alertController.addAction(UIAlertAction(title: "I do NOT agree",
+        alertController.addAction(UIAlertAction(title: "同意しません",
             style: UIAlertActionStyle.Default,
             handler: nil)
         )

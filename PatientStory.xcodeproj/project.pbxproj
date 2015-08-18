@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */; };
+		9A0F0F231B8341CE006F76B0 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */; };
+		9A0F0F251B834542006F76B0 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F241B834542006F76B0 /* ComposeViewController.swift */; };
 		9A1DC9F81B809755000887A2 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1DC9F71B809754000887A2 /* HomeCollectionViewCell.swift */; };
 		9A1DC9FA1B809CE6000887A2 /* facescale1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DC9F91B809CE6000887A2 /* facescale1.png */; };
 		9A1DC9FC1B809CFB000887A2 /* facescale5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1DC9FB1B809CFB000887A2 /* facescale5.png */; };
@@ -66,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		9A0F0F241B834542006F76B0 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		9A1DC9F71B809754000887A2 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A1DC9F91B809CE6000887A2 /* facescale1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facescale1.png; sourceTree = "<group>"; };
 		9A1DC9FB1B809CFB000887A2 /* facescale5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facescale5.png; sourceTree = "<group>"; };
@@ -154,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A0F0F211B833D98006F76B0 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */,
+			);
+			name = Survey;
+			sourceTree = "<group>";
+		};
 		9A1DC9F21B8095F0000887A2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +173,7 @@
 				9AD19A951B7FA5BC00EB2A42 /* HomeTableViewCell.swift */,
 				9A1DC9F71B809754000887A2 /* HomeCollectionViewCell.swift */,
 				9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */,
+				9A0F0F211B833D98006F76B0 /* Survey */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 			children = (
 				9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */,
 				9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */,
+				9A0F0F241B834542006F76B0 /* ComposeViewController.swift */,
 			);
 			name = TimeLine;
 			sourceTree = "<group>";
@@ -432,6 +446,7 @@
 			files = (
 				9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */,
 				9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */,
+				9A0F0F231B8341CE006F76B0 /* SurveyViewController.swift in Sources */,
 				9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */,
 				9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */,
 				9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */,
@@ -440,6 +455,7 @@
 				9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */,
 				9AD19A961B7FA5BC00EB2A42 /* HomeTableViewCell.swift in Sources */,
 				9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */,
+				9A0F0F251B834542006F76B0 /* ComposeViewController.swift in Sources */,
 				9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */,
 				9AD19A9C1B807D5100EB2A42 /* UsersDetailViewController.swift in Sources */,
 				9A25294F1B7DC016007CC19C /* User.swift in Sources */,
