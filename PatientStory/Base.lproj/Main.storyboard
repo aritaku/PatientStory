@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-Ej-5Vr">
-                                <rect key="frame" x="54" y="412" width="60" height="30"/>
+                                <rect key="frame" x="50" y="434" width="60" height="30"/>
                                 <state key="normal" title="服薬記録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,17 +25,8 @@
                                     <segue destination="46D-Zl-evP" kind="show" id="MVt-xr-Ezo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAC-Ic-VwS">
-                                <rect key="frame" x="168" y="412" width="105" height="30"/>
-                                <state key="normal" title="副作用チェック">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VoE-I8-MJ4" kind="show" id="Uy9-j5-tvK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPz-P8-WXQ">
-                                <rect key="frame" x="130" y="450" width="60" height="30"/>
+                                <rect key="frame" x="129" y="204" width="60" height="30"/>
                                 <state key="normal" title="薬を登録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="N12-om-82b">
-                                <rect key="frame" x="8" y="99" width="302" height="119"/>
+                                <rect key="frame" x="8" y="99" width="302" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -94,19 +85,19 @@
                                             <outlet property="endDateLable" destination="din-cm-t0N" id="Oaw-Fb-sgs"/>
                                             <outlet property="medicine_nameLabel" destination="5Ax-fq-sf6" id="oWU-L6-J5P"/>
                                             <outlet property="startDateLabel" destination="OxZ-bR-pRT" id="upz-xx-oUw"/>
-                                            <segue destination="5Bh-Rb-i1U" kind="show" identifier="toMedicineDetail" id="6e9-Sm-xP4"/>
+                                            <segue destination="VoE-I8-MJ4" kind="show" id="QKB-nJ-DtI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="服薬・副作用履歴" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-7O-Gvr">
-                                <rect key="frame" x="8" y="226" width="136" height="21"/>
+                                <rect key="frame" x="8" y="258" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.69803921570000005" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uIs-Tl-ias">
-                                <rect key="frame" x="8" y="255" width="302" height="139"/>
+                                <rect key="frame" x="9" y="287" width="302" height="139"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E0L-Wb-gjO">
                                     <size key="itemSize" width="49" height="139"/>
@@ -148,6 +139,15 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAC-Ic-VwS">
+                                <rect key="frame" x="167" y="434" width="105" height="30"/>
+                                <state key="normal" title="副作用チェック">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5Bh-Rb-i1U" kind="show" id="QlA-mg-0ur"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -164,10 +164,10 @@
             </objects>
             <point key="canvasLocation" x="1925" y="-1077"/>
         </scene>
-        <!--View Controller-->
+        <!--副作用チェック-->
         <scene sceneID="2aH-RV-VaZ">
             <objects>
-                <viewController id="5Bh-Rb-i1U" sceneMemberID="viewController">
+                <viewController title="副作用チェック" id="5Bh-Rb-i1U" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pqq-bm-HuB"/>
                         <viewControllerLayoutGuide type="bottom" id="YJh-YU-t51"/>
@@ -175,13 +175,55 @@
                     <view key="view" contentMode="scaleToFill" id="G4p-za-ER4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-Sc-9Lr">
+                                <rect key="frame" x="9" y="153" width="301" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="" image="facescale1.png"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="" image="facescale5.png"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部位：手や足" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xde-xA-j65">
+                                <rect key="frame" x="9" y="131" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="部位：口" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTn-5q-frE">
+                                <rect key="frame" x="9" y="209" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4G-s5-apt">
+                                <rect key="frame" x="137" y="471" width="30" height="30"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9M-Kh-8l0">
+                                <rect key="frame" x="9" y="232" width="301" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fif-IJ-gCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2365" y="-1518"/>
+            <point key="canvasLocation" x="2137" y="-460"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xBL-UB-FYi">
@@ -200,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dec-d0-lf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2186" y="-432"/>
+            <point key="canvasLocation" x="2448" y="-1507"/>
         </scene>
         <!--Compose View Controller-->
         <scene sceneID="IW3-UX-MrE">
@@ -242,22 +284,22 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-OG-7Ya">
-                                <rect key="frame" x="137" y="455" width="36" height="34"/>
-                                <state key="normal" title="投稿">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="compose:" destination="1vR-h0-Mxr" eventType="touchUpInside" id="GMo-2A-rpm"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ooZ-R2-r5J">
                                 <rect key="frame" x="10" y="246" width="301" height="179"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieS-OG-7Ya">
+                                <rect key="frame" x="142" y="446" width="36" height="34"/>
+                                <state key="normal" title="投稿">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="compose:" destination="1vR-h0-Mxr" eventType="touchUpInside" id="mgG-zJ-9Mh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -272,10 +314,10 @@
             </objects>
             <point key="canvasLocation" x="2673" y="-126"/>
         </scene>
-        <!--View Controller-->
+        <!--服用チェック-->
         <scene sceneID="Q0r-F3-jch">
             <objects>
-                <viewController id="46D-Zl-evP" sceneMemberID="viewController">
+                <viewController title="服用チェック" id="46D-Zl-evP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Erv-Gb-XdJ"/>
                         <viewControllerLayoutGuide type="bottom" id="fXg-vS-KvJ"/>
@@ -283,6 +325,40 @@
                     <view key="view" contentMode="scaleToFill" id="04Y-oS-57t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-85-7TP">
+                                <rect key="frame" x="42" y="193" width="237" height="29"/>
+                                <segments>
+                                    <segment title="飲んだ"/>
+                                    <segment title="飲んで無い"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本日日付の夕方" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ME-qJ-xmz">
+                                <rect key="frame" x="42" y="260" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-AZ-H89">
+                                <rect key="frame" x="42" y="289" width="237" height="29"/>
+                                <segments>
+                                    <segment title="飲んだ"/>
+                                    <segment title="飲んで無い"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pQ-lk-Xf1">
+                                <rect key="frame" x="145" y="371" width="30" height="30"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本日日付の朝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziu-dY-E3t">
+                                <rect key="frame" x="42" y="164" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -650,7 +726,7 @@
                                     <navigationItem title="Data" id="b6M-ZB-sCx"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-eJ-hKI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cnt05_02c_graph.gif" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-eJ-hKI">
                                 <rect key="frame" x="11" y="54" width="298" height="225"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wE3-h5-Mks">
@@ -776,7 +852,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="urp-cF-PVY" kind="relationship" relationship="viewControllers" id="4aE-Yk-gaR"/>
-                        <segue destination="dA9-nu-tJS" kind="relationship" relationship="viewControllers" id="9Th-z3-Ovx"/>
                         <segue destination="5bK-Yt-INb" kind="relationship" relationship="viewControllers" id="nhE-bP-pT9"/>
                         <segue destination="gXd-ty-Iys" kind="relationship" relationship="viewControllers" id="UHB-Bz-uiv"/>
                     </connections>
@@ -847,7 +922,9 @@
         <image name="008.png" width="40" height="40"/>
         <image name="051.png" width="40" height="40"/>
         <image name="087.png" width="40" height="40"/>
+        <image name="cnt05_02c_graph.gif" width="510" height="318"/>
         <image name="facescale1.png" width="132" height="172"/>
+        <image name="facescale5.png" width="130" height="154"/>
         <image name="xel100ptp_2_s.jpg" width="144" height="144"/>
     </resources>
     <inferredMetricsTieBreakers>

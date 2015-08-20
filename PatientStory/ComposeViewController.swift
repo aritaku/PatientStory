@@ -25,35 +25,7 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
         
         tweet.saveInBackground()
         
-        /*
-        if let updateObject = currentObject as PFObject? {
-            
-            // Update the existing parse object
-            updateObject["nameEnglish"] = nameEnglish.text
-            updateObject["nameLocal"] = nameLocal.text
-            updateObject["capital"] = capital.text
-            updateObject["currencyCode"] = currencyCode.text
-            
-            // Save the data back to the server in a background task
-            updateObject.saveEventually()
-            
-        } else {
-            
-            // Create a new parse object
-            var updateObject = PFObject(className:"Countries")
-            
-            updateObject["nameEnglish"] = nameEnglish.text
-            updateObject["nameLocal"] = nameLocal.text
-            updateObject["capital"] = capital.text
-            updateObject["currencyCode"] = currencyCode.text
-            updateObject.ACL = PFACL(user: PFUser.currentUser())
-            
-            // Save the data back to the server in a background task
-            updateObject.saveEventually()
-            
-        }
-        */
-        
+                
         // Return to table view
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -61,6 +33,8 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.titleTextField.delegate = self
+        self.SideEffectTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 

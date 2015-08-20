@@ -48,6 +48,8 @@
 		9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */; };
 		9A8F2C641B82854100B00A8B /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */; };
 		9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */; };
+		9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F491B84BB4100298A12 /* ロゴ.png */; };
+		9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */; };
 		9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */; };
 		9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */; };
 		9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD19A931B7F95BE00EB2A42 /* Medicine.swift */; };
@@ -114,6 +116,8 @@
 		9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
+		9AC07F491B84BB4100298A12 /* ロゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ.png"; sourceTree = "<group>"; };
+		9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cnt05_02c_graph.gif; sourceTree = "<group>"; };
 		9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xeloda_handbook.png; sourceTree = "<group>"; };
 		9AD19A911B7F18A300EB2A42 /* MedicineRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineRegistViewController.swift; sourceTree = "<group>"; };
 		9AD19A931B7F95BE00EB2A42 /* Medicine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
@@ -246,6 +250,8 @@
 				9A2529421B7CABD7007CC19C /* 093.png */,
 				9AD19A971B80602400EB2A42 /* xel100ptp_2_s.jpg */,
 				9A1DC9FB1B809CFB000887A2 /* facescale5.png */,
+				9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */,
+				9AC07F491B84BB4100298A12 /* ロゴ.png */,
 				9A1DC9F91B809CE6000887A2 /* facescale1.png */,
 				9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */,
 				9A2529401B7CAB8D007CC19C /* 087.png */,
@@ -417,8 +423,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */,
+				9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */,
 				9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */,
 				9A25293D1B7CAB46007CC19C /* 008.png in Resources */,
+				9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */,
 				9A2529411B7CAB8D007CC19C /* 087.png in Resources */,
 				9A1DC9FC1B809CFB000887A2 /* facescale5.png in Resources */,
 				9A1DC9FA1B809CE6000887A2 /* facescale1.png in Resources */,

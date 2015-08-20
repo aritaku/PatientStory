@@ -9,6 +9,8 @@
 import UIKit
 
 class SurveyViewController: UIViewController {
+    
+    //日付と一緒に服薬記録を保存しHomeのCollectionViewに表示
 
     override func viewDidLoad() {
         super.viewDidLoad()
