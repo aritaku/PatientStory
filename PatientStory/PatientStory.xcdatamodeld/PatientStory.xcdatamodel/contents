@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Compliance" syncable="YES">
+    <entity name="Compliance" representedClassName="PatientStory.Compliance" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="evening" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="evening" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="morning" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="morning" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="medicineToCompliance" inverseEntity="Medicine" syncable="YES"/>
     </entity>
-    <entity name="Medicine" syncable="YES">
+    <entity name="Medicine" representedClassName="PatientStory.Medicine" syncable="YES">
         <attribute name="end_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="medicineToCompliance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Compliance" inverseName="newRelationship" inverseEntity="Compliance" syncable="YES"/>
+        <relationship name="medicineToSideEffect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SideEffect" inverseName="newRelationship" inverseEntity="SideEffect" syncable="YES"/>
+        <relationship name="userToMedicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="newRelationship" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="SideEffect" syncable="YES">
+    <entity name="SideEffect" representedClassName="PatientStory.SideEffect" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="grade" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="medicineToSideEffect" inverseEntity="Medicine" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName="PatientStory.User" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="illnessName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medicalHistory" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="medicine" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="userToMedicine" inverseEntity="Medicine" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Medicine" positionX="214" positionY="-39" width="128" height="105"/>
-        <element name="User" positionX="-99" positionY="-40" width="128" height="103"/>
-        <element name="Compliance" positionX="54" positionY="-9" width="128" height="105"/>
-        <element name="SideEffect" positionX="63" positionY="9" width="128" height="90"/>
+        <element name="Compliance" positionX="385" positionY="-99" width="128" height="118"/>
+        <element name="Medicine" positionX="144" positionY="-25" width="117" height="133"/>
+        <element name="SideEffect" positionX="387" positionY="101" width="128" height="103"/>
+        <element name="User" positionX="-99" positionY="-40" width="128" height="148"/>
     </elements>
 </model>

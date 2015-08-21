@@ -16,5 +16,8 @@ class User: NSManagedObject {
     @NSManaged var sex :String?
     @NSManaged var medicine :String?
     @NSManaged var age :Int
+    @NSManaged var medicalHitory :String
+    @NSManaged var illnessName :String
+    
     
 }

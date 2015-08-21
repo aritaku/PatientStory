@@ -54,17 +54,13 @@ class SurveyViewController: UIViewController {
         
         var newData = Compliance(entity :myEntity, insertIntoManagedObjectContext :myContext)
         newData.date = NSDate()
+        
         if (morningSegment?.selectedSegmentIndex == 1){
-            newData.morning = true
-        } else {
-            newData.morning = false
+            newData.morning = "◯"
         }
         if (eveningSegment?.selectedSegmentIndex == 1){
-            newData.evening = true
-        } else {
-            newData.evening = false
+            newData.evening = "◯"
         }
-        
     }
     
     

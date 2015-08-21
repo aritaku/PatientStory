@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, NSFetchedResultsControllerDelegate {
     
     var medicineNames :[String] = []
     var medicineHistories :[NSDictionary] = []
@@ -17,7 +17,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var tableView:UITableView!
     @IBOutlet var collectionView :UICollectionView!
     
-    
+    var fetchedResultController :NSFetchedResultsController = NSFetchedResultsController()
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        fetchedResultController = self.getFetchedResultController()
+        fetchedResultController.delegate = self
+        fetchedResultController.performFetch(nil)
 
         self.navigationController?.navigationBar
+        println(managedObjectContext)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -35,12 +41,26 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.reloadData()
         readData()
+        collectionView.reloadData()
         readCollectionData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - NSFetchResultController
+    func getFetchedResultController() -> NSFetchedResultsController {
+        fetchedResultController = NSFetchedResultsController(fetchRequest: self.complianceFetchRequest(), managedObjectContext: managedObjectContext!, sectionNameKeyPath: nil, cacheName: nil)
+        return fetchedResultController
+    }
+    
+    func complianceFetchRequest() -> NSFetchRequest {
+        let fetchRequest = NSFetchRequest(entityName: "Compliance")
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        return fetchRequest
     }
     
     //MARK: - TableView
@@ -75,18 +95,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let dateFormatter = NSDateFormatter()
         dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") // ロケールの設定
         dateFormatter.dateFormat = "MM/dd"// フォーマットの指定
-        println(dateFormatter.stringFromDate(now))
-
-        /*
-        dateFormatter.timeStyle = .NoStyle // 時刻だけ表示させない
-        dateFormatter.dateStyle = .ShortStyle
-        println(dateFormatter.stringFromDate(now)) // -> 2014年6月24日火曜日
-        */
-        //let editNow :String = dateFormatter.stringFromDate(now).substringFromIndex(5)
-        //let nowString :String = dateFormatter.stringFromDate(now)
-        //let editNowString :String = nowString.substringFromIndex(5)
-        //println(editNowString)
+        //println(dateFormatter.stringFromDate(now)
         collectionCell.dateLabel?.text = dateFormatter.stringFromDate(now)
+        /*
+        if (medicineHistories == true ){
+            collectionCell.numberLabel?.text = "◯"
+        }
+        */
+        
+        //let compliance = fetchedResultController.objectAtIndexPath(indexPath) as! Compliance
+        //collectionCell.numberLabel?.text = compliance.morning
+        
+        println(medicineHistories)
+        //collectionCell.numberLabel?.text = "\(medicineHistories["morning"])"
         return collectionCell
     }
     
@@ -116,6 +137,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         var myResults: NSArray! = myContext.executeFetchRequest(myRequest, error: nil)
         medicineHistories = []
+        
+        
+        
         
         for myData in myResults {
             medicineHistories.append(myData as! NSDictionary)

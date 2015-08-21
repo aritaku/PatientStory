@@ -417,8 +417,8 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-85-7TP">
                                 <rect key="frame" x="42" y="193" width="237" height="29"/>
                                 <segments>
-                                    <segment title="飲んだ"/>
-                                    <segment title="飲んで無い"/>
+                                    <segment title="飲んでない"/>
+                                    <segment title="飲んだ！"/>
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本日日付の夕方" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ME-qJ-xmz">
@@ -430,8 +430,8 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-AZ-H89">
                                 <rect key="frame" x="42" y="289" width="237" height="29"/>
                                 <segments>
-                                    <segment title="飲んだ"/>
-                                    <segment title="飲んで無い"/>
+                                    <segment title="飲んでない"/>
+                                    <segment title="飲んだ！"/>
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pQ-lk-Xf1">
@@ -439,6 +439,9 @@
                                 <state key="normal" title="登録">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="46D-Zl-evP" eventType="touchUpInside" id="1gK-Gb-qMn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本日日付の朝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziu-dY-E3t">
                                 <rect key="frame" x="42" y="164" width="102" height="21"/>
@@ -450,6 +453,12 @@
                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="eveningLabel" destination="3ME-qJ-xmz" id="ygh-MW-y6B"/>
+                        <outlet property="eveningSegment" destination="6x2-AZ-H89" id="FyO-K6-igN"/>
+                        <outlet property="morningLabel" destination="ziu-dY-E3t" id="y8h-GR-65W"/>
+                        <outlet property="morningSegment" destination="cuK-85-7TP" id="z7V-RB-6xP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sPk-G6-IVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

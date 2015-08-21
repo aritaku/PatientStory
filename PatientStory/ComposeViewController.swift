@@ -36,11 +36,24 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
         self.titleTextField.delegate = self
         self.SideEffectTextField.delegate = self
         // Do any additional setup after loading the view.
+        
+        let accessoryBar = UIToolbar()
+        accessoryBar.sizeToFit()
+        
+        let doneBtn = UIBarButtonItem(title: "完了", style: .Done, target: self, action: nil)
+        let spacer = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        accessoryBar.setItems([spacer, doneBtn], animated: true)
+        
+        BodyTextView.inputAccessoryView = accessoryBar
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func doneBtnDidPush(){
+        self.BodyTextView.resignFirstResponder()
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

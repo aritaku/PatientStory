@@ -14,7 +14,7 @@ class Compliance: NSManagedObject {
    
     @NSManaged var date:NSDate
     @NSManaged var history: String
-    @NSManaged var morning: Bool
-    @NSManaged var evening: Bool
+    @NSManaged var morning: String
+    @NSManaged var evening: String
     
 }
