@@ -23,9 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Register for Push Notitications
         if application.applicationState != UIApplicationState.Background {
-            // Track an app open here if we launch with a push, unless
-            // "content_available" was used to trigger a background push (introduced in iOS 7).
-            // In that case, we skip tracking here to avoid double counting the app-open.
             
             let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
             let oldPushHandlerOnly = !self.respondsToSelector("application:didReceiveRemoteNotification:fetchCompletionHandler:")
@@ -38,14 +35,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         if application.respondsToSelector("registerUserNotificationSettings:") {
-            let userNotificationTypes = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+            let userNotificationTypes = UIUserNotificationType.Alert
+                | UIUserNotificationType.Badge
+                | UIUserNotificationType.Sound
+            
             let settings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
             application.registerUserNotificationSettings(settings)
             application.registerForRemoteNotifications()
         } else {
-            let types = UIRemoteNotificationType.Badge | UIRemoteNotificationType.Alert | UIRemoteNotificationType.Sound
+            let types = UIUserNotificationType.Badge
+                | UIUserNotificationType.Alert
+                | UIUserNotificationType.Sound
+            application.registerForRemoteNotifications()
+            /*
+            let types = UIRemoteNotificationType.Badge
+                | UIRemoteNotificationType.Alert
+                | UIRemoteNotificationType.Sound
+            
             application.registerForRemoteNotificationTypes(types)
+            */
         }
+        
+        UINavigationBar.appearance().barTintColor = UIColor(hue: 229/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
         
         return true
     }
@@ -85,8 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        // Saves changes in the application's managed object context before the application terminates.
+        
         self.saveContext()
     }
 

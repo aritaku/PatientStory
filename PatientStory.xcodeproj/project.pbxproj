@@ -39,6 +39,13 @@
 		9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2529481B7CB477007CC19C /* DataViewController.swift */; };
 		9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */; };
 		9A25294F1B7DC016007CC19C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25294E1B7DC016007CC19C /* User.swift */; };
+		9A37F7A11B863A5100E996E6 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7A01B863A5100E996E6 /* UserViewController.swift */; };
+		9A37F7A31B863C5C00E996E6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7A21B863C5C00E996E6 /* UserTableViewCell.swift */; };
+		9A37F7A51B86462A00E996E6 /* 背景なし.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37F7A41B86462A00E996E6 /* 背景なし.png */; };
+		9A37F7A71B864F3700E996E6 /* doctor1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A37F7A61B864F3700E996E6 /* doctor1.png */; };
+		9A37F7A91B8658CE00E996E6 /* SideEffectSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7A81B8658CD00E996E6 /* SideEffectSurveyViewController.swift */; };
+		9A37F7AB1B86D8BC00E996E6 /* Compliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */; };
+		9A37F7AD1B86D8D700E996E6 /* SideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */; };
 		9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */; };
 		9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */; };
 		9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E41B6F7FBC004F392C /* Main.storyboard */; };
@@ -46,7 +53,6 @@
 		9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5744E91B6F7FBC004F392C /* LaunchScreen.xib */; };
 		9A5744F71B6F7FBC004F392C /* PatientStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */; };
 		9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */; };
-		9A8F2C641B82854100B00A8B /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */; };
 		9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */; };
 		9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F491B84BB4100298A12 /* ロゴ.png */; };
 		9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */; };
@@ -103,6 +109,13 @@
 		9A2529481B7CB477007CC19C /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9A25294A1B7CB48A007CC19C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		9A25294E1B7DC016007CC19C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9A37F7A01B863A5100E996E6 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		9A37F7A21B863C5C00E996E6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = ../UserTableViewCell.swift; sourceTree = "<group>"; };
+		9A37F7A41B86462A00E996E6 /* 背景なし.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景なし.png"; sourceTree = "<group>"; };
+		9A37F7A61B864F3700E996E6 /* doctor1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor1.png; sourceTree = "<group>"; };
+		9A37F7A81B8658CD00E996E6 /* SideEffectSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideEffectSurveyViewController.swift; sourceTree = "<group>"; };
+		9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compliance.swift; sourceTree = "<group>"; };
+		9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideEffect.swift; sourceTree = "<group>"; };
 		9A5744D81B6F7FBC004F392C /* PatientStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744DC1B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +127,6 @@
 		9A5744F51B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientStoryTests.swift; sourceTree = "<group>"; };
 		9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
-		9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
 		9AC07F491B84BB4100298A12 /* ロゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ.png"; sourceTree = "<group>"; };
 		9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cnt05_02c_graph.gif; sourceTree = "<group>"; };
@@ -166,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */,
+				9A37F7A81B8658CD00E996E6 /* SideEffectSurveyViewController.swift */,
 			);
 			name = Survey;
 			sourceTree = "<group>";
@@ -206,6 +219,8 @@
 			children = (
 				9A25294E1B7DC016007CC19C /* User.swift */,
 				9AD19A931B7F95BE00EB2A42 /* Medicine.swift */,
+				9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */,
+				9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,8 +228,9 @@
 		9A1DC9F61B80963C000887A2 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				9A8F2C631B82854100B00A8B /* UsersTableViewController.swift */,
+				9A37F7A01B863A5100E996E6 /* UserViewController.swift */,
 				9AD19A9B1B807D5100EB2A42 /* UsersDetailViewController.swift */,
+				9A37F7A21B863C5C00E996E6 /* UserTableViewCell.swift */,
 			);
 			name = Users;
 			sourceTree = "<group>";
@@ -247,6 +263,8 @@
 		9A25293B1B7CAAFE007CC19C /* photos */ = {
 			isa = PBXGroup;
 			children = (
+				9A37F7A41B86462A00E996E6 /* 背景なし.png */,
+				9A37F7A61B864F3700E996E6 /* doctor1.png */,
 				9A2529421B7CABD7007CC19C /* 093.png */,
 				9AD19A971B80602400EB2A42 /* xel100ptp_2_s.jpg */,
 				9A1DC9FB1B809CFB000887A2 /* facescale5.png */,
@@ -425,11 +443,13 @@
 				9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */,
 				9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */,
 				9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */,
+				9A37F7A51B86462A00E996E6 /* 背景なし.png in Resources */,
 				9A25293D1B7CAB46007CC19C /* 008.png in Resources */,
 				9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */,
 				9A2529411B7CAB8D007CC19C /* 087.png in Resources */,
 				9A1DC9FC1B809CFB000887A2 /* facescale5.png in Resources */,
 				9A1DC9FA1B809CE6000887A2 /* facescale1.png in Resources */,
+				9A37F7A71B864F3700E996E6 /* doctor1.png in Resources */,
 				9A5744E81B6F7FBC004F392C /* Images.xcassets in Resources */,
 				9A2529431B7CABD7007CC19C /* 093.png in Resources */,
 				9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */,
@@ -452,7 +472,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A37F7AD1B86D8D700E996E6 /* SideEffect.swift in Sources */,
 				9AD19A921B7F18A300EB2A42 /* MedicineRegistViewController.swift in Sources */,
+				9A37F7A11B863A5100E996E6 /* UserViewController.swift in Sources */,
 				9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */,
 				9A0F0F231B8341CE006F76B0 /* SurveyViewController.swift in Sources */,
 				9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */,
@@ -461,13 +483,15 @@
 				9A2529491B7CB477007CC19C /* DataViewController.swift in Sources */,
 				9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */,
 				9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */,
+				9A37F7AB1B86D8BC00E996E6 /* Compliance.swift in Sources */,
+				9A37F7A31B863C5C00E996E6 /* UserTableViewCell.swift in Sources */,
 				9AD19A961B7FA5BC00EB2A42 /* HomeTableViewCell.swift in Sources */,
+				9A37F7A91B8658CE00E996E6 /* SideEffectSurveyViewController.swift in Sources */,
 				9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */,
 				9A0F0F251B834542006F76B0 /* ComposeViewController.swift in Sources */,
 				9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */,
 				9AD19A9C1B807D5100EB2A42 /* UsersDetailViewController.swift in Sources */,
 				9A25294F1B7DC016007CC19C /* User.swift in Sources */,
-				9A8F2C641B82854100B00A8B /* UsersTableViewController.swift in Sources */,
 				9A1DC9F81B809755000887A2 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

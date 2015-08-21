@@ -26,11 +26,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 81.0/256.0, green: 178.0/256.0, blue: 172.0/256.0, alpha: 1.0)
+        //self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 233.0/255.0, alpha: 1.0)
         
         tableView.reloadData()
         readData()

@@ -23,27 +23,31 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="がんと闘うあなたのために" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9l9-NM-jYy">
-                    <rect key="frame" x="138" y="224" width="204" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景なし.png" translatesAutoresizingMaskIntoConstraints="NO" id="yNw-Vq-h5V">
+                    <rect key="frame" x="179" y="193" width="122" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="cQZ-v7-mwM"/>
+                        <constraint firstAttribute="width" constant="122" id="hTb-Rc-QEQ"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.87450980392156863" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstItem="9l9-NM-jYy" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="5rI-xG-TMd"/>
-                <constraint firstItem="9l9-NM-jYy" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="41" id="Jpo-Eu-7k0"/>
+                <constraint firstItem="yNw-Vq-h5V" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="6gh-BO-V7p"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="yNw-Vq-h5V" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="10" id="kpV-BG-GBe"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="背景なし.png" width="143" height="142"/>
+    </resources>
 </document>

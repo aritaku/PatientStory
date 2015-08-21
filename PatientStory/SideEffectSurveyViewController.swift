@@ -1,20 +1,18 @@
 //
-//  SurveyViewController.swift
+//  SideEffectSurveyViewController.swift
 //  PatientStory
 //
-//  Created by 有村 琢磨 on 2015/08/18.
+//  Created by 有村 琢磨 on 2015/08/21.
 //  Copyright (c) 2015年 有村 琢磨. All rights reserved.
 //
 
 import UIKit
 
-class SurveyViewController: UIViewController {
-    
-    //日付と一緒に服薬記録を保存しHomeのCollectionViewに表示
+class SideEffectSurveyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+
         // Do any additional setup after loading the view.
     }
 
