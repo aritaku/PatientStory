@@ -12,6 +12,7 @@ import CoreData
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
     
     var medicineNames :[String] = []
+    var medicineHistories :[NSDictionary] = []
     
     @IBOutlet var tableView:UITableView!
     @IBOutlet var collectionView :UICollectionView!
@@ -34,6 +35,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.reloadData()
         readData()
+        readCollectionData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -103,6 +105,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         println(medicineNames)
         tableView.reloadData()
+    }
+    
+    func readCollectionData() {
+        let appDel :AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let myContext :NSManagedObjectContext = appDel.managedObjectContext!
+        
+        let myRequest : NSFetchRequest = NSFetchRequest(entityName: "Compliance")
+        myRequest.returnsObjectsAsFaults = false
+        
+        var myResults: NSArray! = myContext.executeFetchRequest(myRequest, error: nil)
+        medicineHistories = []
+        
+        for myData in myResults {
+            medicineHistories.append(myData as! NSDictionary)
+        }
+        println(medicineHistories)
+        collectionView.reloadData()
     }
     
     /*
