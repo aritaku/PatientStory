@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30FFF5D5EA44D18F167B2046 /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2C6B213E2F20B991B810E /* MBCircularProgressBarLayer.h */; };
+		333148B526E34AE8F543DDC9 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE87B0FE4878C9B13E697CD /* MBCircularProgressBarView.m */; };
+		36E0569B3D9D0739B8573188 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 515518896457120E31A3E81B /* MBCircularProgressBarView.h */; };
+		399D3175D99847E83E8E038A /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2C6B213E2F20B991B810E /* MBCircularProgressBarLayer.h */; };
+		4054FE3D321D283B2F2F44ED /* Pods-PatientStoryTests-MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5312ABF7415A631163121A1A /* Pods-PatientStoryTests-MBCircularProgressBar-dummy.m */; };
+		4DAD8E0C951C209D6124D214 /* Pods-PatientStoryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B815F417697C6261967B7F8 /* Pods-PatientStoryTests-dummy.m */; };
+		5C22ACEBE7A09FF629CFBCBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF71A07824D88AD6118A1FB3 /* Foundation.framework */; };
+		8C7BAD1AD6F22E275DFAE4E4 /* Pods-PatientStory-MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BA1F009CBB21EC0C592D1 /* Pods-PatientStory-MBCircularProgressBar-dummy.m */; };
+		985FB8A1297413CAAE101A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF71A07824D88AD6118A1FB3 /* Foundation.framework */; };
+		B504C795AD311F8FB8242B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF71A07824D88AD6118A1FB3 /* Foundation.framework */; };
+		CABAFC6A4719CCF33494EB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF71A07824D88AD6118A1FB3 /* Foundation.framework */; };
+		D22B669F1B843CFD98A03B89 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 515518896457120E31A3E81B /* MBCircularProgressBarView.h */; };
+		D51526BFB1BF7DF615824800 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE87B0FE4878C9B13E697CD /* MBCircularProgressBarView.m */; };
+		E14B088447627D4717E18434 /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 529716BA054FB73F3BB84E29 /* MBCircularProgressBarLayer.m */; };
+		EEC1CF5C5516BD46642CE581 /* Pods-PatientStory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE15040ED65E1C242932C651 /* Pods-PatientStory-dummy.m */; };
+		F8D884906EA43DF8ADC88044 /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 529716BA054FB73F3BB84E29 /* MBCircularProgressBarLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65DA8208D7C6C25E440C79F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB029AD2E1C6EBADF3E7D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5581729460F02381F0C420B;
+			remoteInfo = "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar";
+		};
+		95DD93CB58D977F7495C5E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB029AD2E1C6EBADF3E7D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48636C4E1A3CB0250B16FF05;
+			remoteInfo = "Pods-PatientStory-MBCircularProgressBar";
+		};
+		ADE930A395EACAF7C7A16DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB029AD2E1C6EBADF3E7D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA5D8C570D119C5C3BA0AD0;
+			remoteInfo = "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar";
+		};
+		BE5238E3D2433C2FF72A5C53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB029AD2E1C6EBADF3E7D3A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2653A03BF61E6D89D5551E1;
+			remoteInfo = "Pods-PatientStoryTests-MBCircularProgressBar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		053A620A821E4704016C2781 /* libPods-PatientStory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatientStory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		064194A0B25A863A6CCDECFF /* Pods-PatientStoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0CB09FBC274C833DDE8EE567 /* Pods-PatientStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStory.release.xcconfig"; sourceTree = "<group>"; };
+		10081A260F851D76675B11C5 /* libPods-PatientStoryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatientStoryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18434A9BE719C7F8477DF6D2 /* Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch"; path = "../Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		1B815F417697C6261967B7F8 /* Pods-PatientStoryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatientStoryTests-dummy.m"; sourceTree = "<group>"; };
+		1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig"; path = "../Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig"; sourceTree = "<group>"; };
+		4750C8BA03D5B4AE281C1352 /* Pods-PatientStory-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PatientStory-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStory-MBCircularProgressBar-Private.xcconfig"; sourceTree = "<group>"; };
+		50E0FC611C8EC3D967B99586 /* Pods-PatientStoryTests-MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientStoryTests-MBCircularProgressBar.xcconfig"; path = "../Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar.xcconfig"; sourceTree = "<group>"; };
+		515518896457120E31A3E81B /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
+		529716BA054FB73F3BB84E29 /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
+		5312ABF7415A631163121A1A /* Pods-PatientStoryTests-MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-PatientStoryTests-MBCircularProgressBar-dummy.m"; path = "../Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		540867005B427DB0381399C1 /* Pods-PatientStory-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientStory-resources.sh"; sourceTree = "<group>"; };
+		5FE307633EC060DBA45B55FE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		62015D516E9DB8A4334BE2CA /* Pods-PatientStoryTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PatientStoryTests-resources.sh"; sourceTree = "<group>"; };
+		6AD3B0163C4A84A5E44E35DD /* Pods-PatientStoryTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatientStoryTests-environment.h"; sourceTree = "<group>"; };
+		6C5C9D5E0BDF17671F59A958 /* Pods-PatientStory-MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStory-MBCircularProgressBar.xcconfig"; sourceTree = "<group>"; };
+		7012423BA53049A9E56D8C0B /* libPods-PatientStoryTests-MBCircularProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatientStoryTests-MBCircularProgressBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A19329D4D3168628789E58 /* Pods-PatientStoryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatientStoryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7736A2A16A4985CD52289E9F /* Pods-PatientStoryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PatientStoryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8DE87B0FE4878C9B13E697CD /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
+		BAA273A8ACD77DAC35FE8D3F /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE15040ED65E1C242932C651 /* Pods-PatientStory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatientStory-dummy.m"; sourceTree = "<group>"; };
+		BF71A07824D88AD6118A1FB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE9BA1F009CBB21EC0C592D1 /* Pods-PatientStory-MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PatientStory-MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		D3253B9442C4B9F2720F96BF /* Pods-PatientStory-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PatientStory-acknowledgements.plist"; sourceTree = "<group>"; };
+		E350BC9CC6813501E972B3E7 /* Pods-PatientStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		E80FCC902834A93218D719E4 /* Pods-PatientStory-MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatientStory-MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		ED6217820458E30E2C88C244 /* libPods-PatientStory-MBCircularProgressBar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PatientStory-MBCircularProgressBar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F257C98D6B9781B3A4850E4D /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D2C6B213E2F20B991B810E /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		F73A67B9802B66EE1DFB385B /* Pods-PatientStory-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PatientStory-environment.h"; sourceTree = "<group>"; };
+		FC5027C74C5B9A1967267B2F /* Pods-PatientStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PatientStory.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FAD7417A675BB4BC9ED6F32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B504C795AD311F8FB8242B2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D7018D54C60A687605408C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C22ACEBE7A09FF629CFBCBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484A35AF0D4A39806D1ECAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AFBDAFF4B1B488129B2A988 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985FB8A1297413CAAE101A0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63268157AA79157C5A8B7A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABAFC6A4719CCF33494EB0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0678F7B339343F56698F61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		258F1FCF84D1D7369F99E18D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88B74AC87A544A3071052365 /* MBCircularProgressBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E9C9EA31AB713DA39A6187E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C5C9D5E0BDF17671F59A958 /* Pods-PatientStory-MBCircularProgressBar.xcconfig */,
+				4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */,
+				CE9BA1F009CBB21EC0C592D1 /* Pods-PatientStory-MBCircularProgressBar-dummy.m */,
+				E80FCC902834A93218D719E4 /* Pods-PatientStory-MBCircularProgressBar-prefix.pch */,
+				50E0FC611C8EC3D967B99586 /* Pods-PatientStoryTests-MBCircularProgressBar.xcconfig */,
+				1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */,
+				5312ABF7415A631163121A1A /* Pods-PatientStoryTests-MBCircularProgressBar-dummy.m */,
+				18434A9BE719C7F8477DF6D2 /* Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-PatientStory-MBCircularProgressBar";
+			sourceTree = "<group>";
+		};
+		883FD0654ADD7146F90FB3AA /* Pods-PatientStoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				7736A2A16A4985CD52289E9F /* Pods-PatientStoryTests-acknowledgements.markdown */,
+				70A19329D4D3168628789E58 /* Pods-PatientStoryTests-acknowledgements.plist */,
+				1B815F417697C6261967B7F8 /* Pods-PatientStoryTests-dummy.m */,
+				6AD3B0163C4A84A5E44E35DD /* Pods-PatientStoryTests-environment.h */,
+				62015D516E9DB8A4334BE2CA /* Pods-PatientStoryTests-resources.sh */,
+				064194A0B25A863A6CCDECFF /* Pods-PatientStoryTests.debug.xcconfig */,
+				E350BC9CC6813501E972B3E7 /* Pods-PatientStoryTests.release.xcconfig */,
+			);
+			name = "Pods-PatientStoryTests";
+			path = "Target Support Files/Pods-PatientStoryTests";
+			sourceTree = "<group>";
+		};
+		88B74AC87A544A3071052365 /* MBCircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				F6D2C6B213E2F20B991B810E /* MBCircularProgressBarLayer.h */,
+				529716BA054FB73F3BB84E29 /* MBCircularProgressBarLayer.m */,
+				515518896457120E31A3E81B /* MBCircularProgressBarView.h */,
+				8DE87B0FE4878C9B13E697CD /* MBCircularProgressBarView.m */,
+				2E9C9EA31AB713DA39A6187E /* Support Files */,
+			);
+			path = MBCircularProgressBar;
+			sourceTree = "<group>";
+		};
+		8DA9A425E3AC6DA7882B28DD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B17C17E0082584B0E2978B36 /* Pods-PatientStory */,
+				883FD0654ADD7146F90FB3AA /* Pods-PatientStoryTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		92DC15E1CB20FC2119AE1EA2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF71A07824D88AD6118A1FB3 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		986417B2F1A733407054BD66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F257C98D6B9781B3A4850E4D /* MBCircularProgressBar.bundle */,
+				BAA273A8ACD77DAC35FE8D3F /* MBCircularProgressBar.bundle */,
+				053A620A821E4704016C2781 /* libPods-PatientStory.a */,
+				ED6217820458E30E2C88C244 /* libPods-PatientStory-MBCircularProgressBar.a */,
+				10081A260F851D76675B11C5 /* libPods-PatientStoryTests.a */,
+				7012423BA53049A9E56D8C0B /* libPods-PatientStoryTests-MBCircularProgressBar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AADE23BC1C08471196897E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DC15E1CB20FC2119AE1EA2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B17C17E0082584B0E2978B36 /* Pods-PatientStory */ = {
+			isa = PBXGroup;
+			children = (
+				4750C8BA03D5B4AE281C1352 /* Pods-PatientStory-acknowledgements.markdown */,
+				D3253B9442C4B9F2720F96BF /* Pods-PatientStory-acknowledgements.plist */,
+				BE15040ED65E1C242932C651 /* Pods-PatientStory-dummy.m */,
+				F73A67B9802B66EE1DFB385B /* Pods-PatientStory-environment.h */,
+				540867005B427DB0381399C1 /* Pods-PatientStory-resources.sh */,
+				FC5027C74C5B9A1967267B2F /* Pods-PatientStory.debug.xcconfig */,
+				0CB09FBC274C833DDE8EE567 /* Pods-PatientStory.release.xcconfig */,
+			);
+			name = "Pods-PatientStory";
+			path = "Target Support Files/Pods-PatientStory";
+			sourceTree = "<group>";
+		};
+		DE22F911F92CC7E5C84F6EF3 = {
+			isa = PBXGroup;
+			children = (
+				5FE307633EC060DBA45B55FE /* Podfile */,
+				AADE23BC1C08471196897E0B /* Frameworks */,
+				258F1FCF84D1D7369F99E18D /* Pods */,
+				986417B2F1A733407054BD66 /* Products */,
+				8DA9A425E3AC6DA7882B28DD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F4084D4E06D77AAC3BAE457 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FFF5D5EA44D18F167B2046 /* MBCircularProgressBarLayer.h in Headers */,
+				D22B669F1B843CFD98A03B89 /* MBCircularProgressBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65A0437D0BDD65010CAD6B04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399D3175D99847E83E8E038A /* MBCircularProgressBarLayer.h in Headers */,
+				36E0569B3D9D0739B8573188 /* MBCircularProgressBarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48636C4E1A3CB0250B16FF05 /* Pods-PatientStory-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23DA7A9DF1126874848FE8C2 /* Build configuration list for PBXNativeTarget "Pods-PatientStory-MBCircularProgressBar" */;
+			buildPhases = (
+				DB42E934EB8D5F1600894684 /* Sources */,
+				1FAD7417A675BB4BC9ED6F32 /* Frameworks */,
+				65A0437D0BDD65010CAD6B04 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7EAFD0EEA2C1B36926DFD3D /* PBXTargetDependency */,
+			);
+			name = "Pods-PatientStory-MBCircularProgressBar";
+			productName = "Pods-PatientStory-MBCircularProgressBar";
+			productReference = ED6217820458E30E2C88C244 /* libPods-PatientStory-MBCircularProgressBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		51F8E9FA5928631D5EC1E585 /* Pods-PatientStory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74F1F8FDF40DBE4ECCD76FC /* Build configuration list for PBXNativeTarget "Pods-PatientStory" */;
+			buildPhases = (
+				ECCEEB40DDF390B8B15CF7D1 /* Sources */,
+				4AFBDAFF4B1B488129B2A988 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24B837836768EC6443C31DD1 /* PBXTargetDependency */,
+			);
+			name = "Pods-PatientStory";
+			productName = "Pods-PatientStory";
+			productReference = 053A620A821E4704016C2781 /* libPods-PatientStory.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9055D6F87C1A9EC385974C6C /* Pods-PatientStoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C362BF8D58F76A0B8984A54 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests" */;
+			buildPhases = (
+				5C2EDF33B6A4CB2E1C703238 /* Sources */,
+				24D7018D54C60A687605408C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B6E28A2621C514ABEBE0E1C /* PBXTargetDependency */,
+			);
+			name = "Pods-PatientStoryTests";
+			productName = "Pods-PatientStoryTests";
+			productReference = 10081A260F851D76675B11C5 /* libPods-PatientStoryTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9BA5D8C570D119C5C3BA0AD0 /* Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036C269990D737FA142DE0C3 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar" */;
+			buildPhases = (
+				21AFC70FA1963300650749D4 /* Sources */,
+				484A35AF0D4A39806D1ECAA5 /* Frameworks */,
+				25A6D275951799691EDCB978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar";
+			productName = "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar";
+			productReference = F257C98D6B9781B3A4850E4D /* MBCircularProgressBar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A2653A03BF61E6D89D5551E1 /* Pods-PatientStoryTests-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1AD31209EA5B207A2BA4689 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests-MBCircularProgressBar" */;
+			buildPhases = (
+				21AD75665682E5DAA5E529DD /* Sources */,
+				63268157AA79157C5A8B7A1C /* Frameworks */,
+				1F4084D4E06D77AAC3BAE457 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3119D789ED45572A33C0F1C /* PBXTargetDependency */,
+			);
+			name = "Pods-PatientStoryTests-MBCircularProgressBar";
+			productName = "Pods-PatientStoryTests-MBCircularProgressBar";
+			productReference = 7012423BA53049A9E56D8C0B /* libPods-PatientStoryTests-MBCircularProgressBar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C5581729460F02381F0C420B /* Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B080F7F9D957407A4E6195 /* Build configuration list for PBXNativeTarget "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar" */;
+			buildPhases = (
+				C79AEAC69F11686D19F915B6 /* Sources */,
+				6B0678F7B339343F56698F61 /* Frameworks */,
+				AA77A938334EB828E980F0C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar";
+			productName = "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar";
+			productReference = BAA273A8ACD77DAC35FE8D3F /* MBCircularProgressBar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB029AD2E1C6EBADF3E7D3A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 098CF2B6A7400028EA3B8FB3 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE22F911F92CC7E5C84F6EF3;
+			productRefGroup = 986417B2F1A733407054BD66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51F8E9FA5928631D5EC1E585 /* Pods-PatientStory */,
+				48636C4E1A3CB0250B16FF05 /* Pods-PatientStory-MBCircularProgressBar */,
+				C5581729460F02381F0C420B /* Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar */,
+				9055D6F87C1A9EC385974C6C /* Pods-PatientStoryTests */,
+				A2653A03BF61E6D89D5551E1 /* Pods-PatientStoryTests-MBCircularProgressBar */,
+				9BA5D8C570D119C5C3BA0AD0 /* Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25A6D275951799691EDCB978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA77A938334EB828E980F0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21AD75665682E5DAA5E529DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14B088447627D4717E18434 /* MBCircularProgressBarLayer.m in Sources */,
+				333148B526E34AE8F543DDC9 /* MBCircularProgressBarView.m in Sources */,
+				4054FE3D321D283B2F2F44ED /* Pods-PatientStoryTests-MBCircularProgressBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AFC70FA1963300650749D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2EDF33B6A4CB2E1C703238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DAD8E0C951C209D6124D214 /* Pods-PatientStoryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C79AEAC69F11686D19F915B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB42E934EB8D5F1600894684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D884906EA43DF8ADC88044 /* MBCircularProgressBarLayer.m in Sources */,
+				D51526BFB1BF7DF615824800 /* MBCircularProgressBarView.m in Sources */,
+				8C7BAD1AD6F22E275DFAE4E4 /* Pods-PatientStory-MBCircularProgressBar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECCEEB40DDF390B8B15CF7D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC1CF5C5516BD46642CE581 /* Pods-PatientStory-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24B837836768EC6443C31DD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PatientStory-MBCircularProgressBar";
+			target = 48636C4E1A3CB0250B16FF05 /* Pods-PatientStory-MBCircularProgressBar */;
+			targetProxy = 95DD93CB58D977F7495C5E87 /* PBXContainerItemProxy */;
+		};
+		9B6E28A2621C514ABEBE0E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PatientStoryTests-MBCircularProgressBar";
+			target = A2653A03BF61E6D89D5551E1 /* Pods-PatientStoryTests-MBCircularProgressBar */;
+			targetProxy = BE5238E3D2433C2FF72A5C53 /* PBXContainerItemProxy */;
+		};
+		C3119D789ED45572A33C0F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar";
+			target = 9BA5D8C570D119C5C3BA0AD0 /* Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar */;
+			targetProxy = ADE930A395EACAF7C7A16DC8 /* PBXContainerItemProxy */;
+		};
+		E7EAFD0EEA2C1B36926DFD3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar";
+			target = C5581729460F02381F0C420B /* Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar */;
+			targetProxy = 65DA8208D7C6C25E440C79F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E03A3B7E8A93303F333B47D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0F5EB2F1470981F75E4DB207 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1C2B586710CEB2B0C06C7FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PatientStory-MBCircularProgressBar/Pods-PatientStory-MBCircularProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1CDD4B0572204D5FDB62E942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5027C74C5B9A1967267B2F /* Pods-PatientStory.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2641E90B5B01D9AED9EF3A10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PatientStory-MBCircularProgressBar/Pods-PatientStory-MBCircularProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3694C1DF93EE917897CC28AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3A0A2C16D3A338006508588E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 064194A0B25A863A6CCDECFF /* Pods-PatientStoryTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		635C2233A45B0AF434A6C383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		712DD677AB5C8084E2273BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		839F3A6206349531EC03E1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E350BC9CC6813501E972B3E7 /* Pods-PatientStoryTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9C1C09D75737BC4FA57DD169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC251CFA1E7BA9DFCE864DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C10F90936BC7BC9CB3E4C02 /* Pods-PatientStory-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D0D1F539C9AB2632CE0F82BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F346D91607D1143D0C49EE4 /* Pods-PatientStoryTests-MBCircularProgressBar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-PatientStoryTests-MBCircularProgressBar/Pods-PatientStoryTests-MBCircularProgressBar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FDE2EDCCBC8F854A1E1A3080 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB09FBC274C833DDE8EE567 /* Pods-PatientStory.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036C269990D737FA142DE0C3 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests-MBCircularProgressBar-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712DD677AB5C8084E2273BB4 /* Debug */,
+				0F5EB2F1470981F75E4DB207 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		098CF2B6A7400028EA3B8FB3 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635C2233A45B0AF434A6C383 /* Debug */,
+				9C1C09D75737BC4FA57DD169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23DA7A9DF1126874848FE8C2 /* Build configuration list for PBXNativeTarget "Pods-PatientStory-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C2B586710CEB2B0C06C7FC1 /* Debug */,
+				2641E90B5B01D9AED9EF3A10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B080F7F9D957407A4E6195 /* Build configuration list for PBXNativeTarget "Pods-PatientStory-MBCircularProgressBar-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC251CFA1E7BA9DFCE864DA3 /* Debug */,
+				3694C1DF93EE917897CC28AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C362BF8D58F76A0B8984A54 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A0A2C16D3A338006508588E /* Debug */,
+				839F3A6206349531EC03E1D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74F1F8FDF40DBE4ECCD76FC /* Build configuration list for PBXNativeTarget "Pods-PatientStory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CDD4B0572204D5FDB62E942 /* Debug */,
+				FDE2EDCCBC8F854A1E1A3080 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1AD31209EA5B207A2BA4689 /* Build configuration list for PBXNativeTarget "Pods-PatientStoryTests-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1F539C9AB2632CE0F82BF /* Debug */,
+				0E03A3B7E8A93303F333B47D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB029AD2E1C6EBADF3E7D3A0 /* Project object */;
+}

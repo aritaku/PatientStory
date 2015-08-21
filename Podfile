@@ -2,10 +2,12 @@
 # platform :ios, '8.0'
 
 target 'PatientStory' do
+pod "MBCircularProgressBar"
 
 end
 
 target 'PatientStoryTests' do
+pod "MBCircularProgressBar"
 
 end
 
