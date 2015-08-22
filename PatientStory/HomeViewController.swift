@@ -41,15 +41,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(animated: Bool) {
 //        UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
         
-        //tableView.reloadData()
         readData()
-        //collectionView.reloadData()
         readCollectionData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: - NSFetchResultController
@@ -95,10 +92,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let now = NSDate()
         let dateFormatter = NSDateFormatter()
-        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP") // ロケールの設定
-        dateFormatter.dateFormat = "MM/dd"// フォーマットの指定
-        //println(dateFormatter.stringFromDate(now)
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
+        dateFormatter.dateFormat = "MM/dd"
         collectionCell.dateLabel?.text = dateFormatter.stringFromDate(now)
+        
         /*
         if (medicineHistories == true ){
             collectionCell.numberLabel?.text = "◯"
@@ -126,7 +123,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         for myData in myResults {
             medicineNames.append(myData.name)
         }
-        //println(medicineNames)
         tableView.reloadData()
     }
     
@@ -140,13 +136,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var myResults: NSArray! = myContext.executeFetchRequest(myRequest, error: nil)
         medicineHistories = []
         
-        
-        
-        
         for myData in myResults {
             medicineHistories.append(myData as! NSDictionary)
         }
-        //println(medicineHistories)
         collectionView.reloadData()
     }
     

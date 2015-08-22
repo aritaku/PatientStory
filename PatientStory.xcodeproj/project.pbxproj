@@ -54,6 +54,12 @@
 		9A5744F71B6F7FBC004F392C /* PatientStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */; };
 		9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */; };
 		9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */; };
+		9AB3B41E1B883D8900C49B9C /* femaleScale6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B4181B883D8900C49B9C /* femaleScale6.png */; };
+		9AB3B41F1B883D8900C49B9C /* femaleScale4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B4191B883D8900C49B9C /* femaleScale4.png */; };
+		9AB3B4201B883D8900C49B9C /* femaleScale1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B41A1B883D8900C49B9C /* femaleScale1.png */; };
+		9AB3B4211B883D8900C49B9C /* femaleScale3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B41B1B883D8900C49B9C /* femaleScale3.png */; };
+		9AB3B4221B883D8900C49B9C /* femaleScale5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B41C1B883D8900C49B9C /* femaleScale5.png */; };
+		9AB3B4231B883D8900C49B9C /* femaleScale2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB3B41D1B883D8900C49B9C /* femaleScale2.png */; };
 		9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F491B84BB4100298A12 /* ロゴ.png */; };
 		9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */; };
 		9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */; };
@@ -128,6 +134,12 @@
 		9A5744F61B6F7FBC004F392C /* PatientStoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientStoryTests.swift; sourceTree = "<group>"; };
 		9A8F2C611B827DF000B00A8B /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		9A8F2C651B8287BA00B00A8B /* SignUpInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInViewController.swift; sourceTree = "<group>"; };
+		9AB3B4181B883D8900C49B9C /* femaleScale6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale6.png; sourceTree = "<group>"; };
+		9AB3B4191B883D8900C49B9C /* femaleScale4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale4.png; sourceTree = "<group>"; };
+		9AB3B41A1B883D8900C49B9C /* femaleScale1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale1.png; sourceTree = "<group>"; };
+		9AB3B41B1B883D8900C49B9C /* femaleScale3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale3.png; sourceTree = "<group>"; };
+		9AB3B41C1B883D8900C49B9C /* femaleScale5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale5.png; sourceTree = "<group>"; };
+		9AB3B41D1B883D8900C49B9C /* femaleScale2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = femaleScale2.png; sourceTree = "<group>"; };
 		9AC07F491B84BB4100298A12 /* ロゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴ.png"; sourceTree = "<group>"; };
 		9AC07F4B1B84E1C900298A12 /* cnt05_02c_graph.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cnt05_02c_graph.gif; sourceTree = "<group>"; };
 		9AD19A8F1B7F172A00EB2A42 /* xeloda_handbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xeloda_handbook.png; sourceTree = "<group>"; };
@@ -263,6 +275,12 @@
 		9A25293B1B7CAAFE007CC19C /* photos */ = {
 			isa = PBXGroup;
 			children = (
+				9AB3B4181B883D8900C49B9C /* femaleScale6.png */,
+				9AB3B4191B883D8900C49B9C /* femaleScale4.png */,
+				9AB3B41A1B883D8900C49B9C /* femaleScale1.png */,
+				9AB3B41B1B883D8900C49B9C /* femaleScale3.png */,
+				9AB3B41C1B883D8900C49B9C /* femaleScale5.png */,
+				9AB3B41D1B883D8900C49B9C /* femaleScale2.png */,
 				9A37F7A41B86462A00E996E6 /* 背景なし.png */,
 				9A37F7A61B864F3700E996E6 /* doctor1.png */,
 				9A2529421B7CABD7007CC19C /* 093.png */,
@@ -442,18 +460,24 @@
 			files = (
 				9A5744E61B6F7FBC004F392C /* Main.storyboard in Resources */,
 				9AC07F4C1B84E1C900298A12 /* cnt05_02c_graph.gif in Resources */,
+				9AB3B4231B883D8900C49B9C /* femaleScale2.png in Resources */,
 				9A5744EB1B6F7FBC004F392C /* LaunchScreen.xib in Resources */,
 				9A37F7A51B86462A00E996E6 /* 背景なし.png in Resources */,
 				9A25293D1B7CAB46007CC19C /* 008.png in Resources */,
 				9AC07F4A1B84BB4100298A12 /* ロゴ.png in Resources */,
+				9AB3B41F1B883D8900C49B9C /* femaleScale4.png in Resources */,
 				9A2529411B7CAB8D007CC19C /* 087.png in Resources */,
 				9A1DC9FC1B809CFB000887A2 /* facescale5.png in Resources */,
+				9AB3B4211B883D8900C49B9C /* femaleScale3.png in Resources */,
 				9A1DC9FA1B809CE6000887A2 /* facescale1.png in Resources */,
 				9A37F7A71B864F3700E996E6 /* doctor1.png in Resources */,
 				9A5744E81B6F7FBC004F392C /* Images.xcassets in Resources */,
+				9AB3B41E1B883D8900C49B9C /* femaleScale6.png in Resources */,
 				9A2529431B7CABD7007CC19C /* 093.png in Resources */,
+				9AB3B4201B883D8900C49B9C /* femaleScale1.png in Resources */,
 				9AD19A901B7F172A00EB2A42 /* xeloda_handbook.png in Resources */,
 				9A25293F1B7CAB70007CC19C /* 051.png in Resources */,
+				9AB3B4221B883D8900C49B9C /* femaleScale5.png in Resources */,
 				9AD19A981B80602400EB2A42 /* xel100ptp_2_s.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,6 +24,9 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    @IBAction func refresh(sender: AnyObject) {
+        loadData()
+    }
     
     func loadData(){
         //timelineData.removeAllObjects()

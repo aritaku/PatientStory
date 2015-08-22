@@ -43,7 +43,8 @@ class SurveyViewController: UIViewController {
     }
     
     @IBAction func registerButton(sender: AnyObject){
-        writeData()
+        //writeData()
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     func writeData(){

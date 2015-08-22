@@ -40,7 +40,7 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
         let accessoryBar = UIToolbar()
         accessoryBar.sizeToFit()
         
-        let doneBtn = UIBarButtonItem(title: "完了", style: .Done, target: self, action: nil)
+        let doneBtn = UIBarButtonItem(title: "完了", style: .Done, target: self, action: "doneBtnDidPush")
         let spacer = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
         accessoryBar.setItems([spacer, doneBtn], animated: true)
         

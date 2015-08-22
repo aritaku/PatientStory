@@ -15,6 +15,6 @@ class Medicine: NSManagedObject {
     @NSManaged var name :String?
     @NSManaged var start_date :NSDate
     @NSManaged var end_date :NSDate
-    //@NSManaged var tookDate :NSDate?
+    @NSManaged var regimen :String
    
 }

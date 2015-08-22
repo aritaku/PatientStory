@@ -10,12 +10,16 @@
 import UIKit
 import CoreData
 
-class MedicineRegistViewController: UIViewController, UITextFieldDelegate {
+class MedicineRegistViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet var nameTextField :UITextField?
     @IBOutlet var startDateTextField :UITextField?
     @IBOutlet var endDateTextField :UITextField?
     @IBOutlet var timingTextField :UITextField?
+    
+    
+    var toolBar :UIToolbar = UIToolbar()
+    let medicineName : [String] = ["ゼローダ", "ティーエスワン"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,26 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate {
         self.startDateTextField?.delegate = self
         self.endDateTextField?.delegate = self
         self.timingTextField?.delegate = self
+        
+        
+        var pickerView = UIPickerView()
+        pickerView.showsSelectionIndicator = true
+        pickerView.delegate = self
+        
+        //toolBar.barStyle = .BlackTranslucent
+        toolBar.tintColor = UIColor.blackColor()
+        toolBar.backgroundColor = UIColor.whiteColor()
+        
+        let accessoryBar = UIToolbar()
+        accessoryBar.sizeToFit()
+        
+        let toolBarBtn = UIBarButtonItem(title: "完了", style: .Done , target: self, action: "tappedToolBarBtn")
+        let spacer = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
+        accessoryBar.setItems([spacer, toolBarBtn], animated: true)
+        toolBar.items = [toolBarBtn]
+        
+        nameTextField!.inputAccessoryView = toolBar
+        nameTextField?.inputView = pickerView
         
         // Do any additional setup after loading the view.
     }
@@ -45,12 +69,11 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate {
     @IBAction func registDataButton(sender: AnyObject) {
         writeData()
         //self.navigationItem.setHidesBackButton(true, animated: false)
-        performSegueWithIdentifier("toRegistMedicineView", sender: nil)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
     
     func writeData(){
-        //CoreDataへの保存
         let appdel :AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let myContext :NSManagedObjectContext = appdel.managedObjectContext!
         
@@ -63,6 +86,29 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate {
 //        newData.time = timingTextField?.text
     }
 
+    
+    //MARK: - PickerView
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.medicineName.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return medicineName[row]
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        nameTextField?.text = medicineName[row]
+        pickerView.hidden = true
+
+    }
+    
+    func tappedToolBarBtn() {
+        self.nameTextField!.resignFirstResponder()
+    }
     /*
     // MARK: - Navigation
 

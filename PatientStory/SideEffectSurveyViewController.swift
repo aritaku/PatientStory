@@ -22,6 +22,9 @@ class SideEffectSurveyViewController: UIViewController {
     }
     
 
+    @IBAction func registerAndBack(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     /*
     // MARK: - Navigation
 
