@@ -33,7 +33,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchedResultController.performFetch(nil)
 
         self.navigationController?.navigationBar
-        println(managedObjectContext)
+        //println(managedObjectContext)
     }
     
     override func viewDidAppear(animated: Bool) {
