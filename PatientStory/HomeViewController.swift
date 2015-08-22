@@ -22,6 +22,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -32,16 +34,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         fetchedResultController.delegate = self
         fetchedResultController.performFetch(nil)
 
-        self.navigationController?.navigationBar
+        //self.navigationController?.navigationBar
         //println(managedObjectContext)
     }
     
     override func viewDidAppear(animated: Bool) {
-        //self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 233.0/255.0, alpha: 1.0)
+//        UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
         
-        tableView.reloadData()
+        //tableView.reloadData()
         readData()
-        collectionView.reloadData()
+        //collectionView.reloadData()
         readCollectionData()
     }
 
@@ -106,7 +108,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //let compliance = fetchedResultController.objectAtIndexPath(indexPath) as! Compliance
         //collectionCell.numberLabel?.text = compliance.morning
         
-        println(medicineHistories)
+        //println(medicineHistories)
         //collectionCell.numberLabel?.text = "\(medicineHistories["morning"])"
         return collectionCell
     }
@@ -124,7 +126,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         for myData in myResults {
             medicineNames.append(myData.name)
         }
-        println(medicineNames)
+        //println(medicineNames)
         tableView.reloadData()
     }
     
@@ -144,7 +146,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         for myData in myResults {
             medicineHistories.append(myData as! NSDictionary)
         }
-        println(medicineHistories)
+        //println(medicineHistories)
         collectionView.reloadData()
     }
     

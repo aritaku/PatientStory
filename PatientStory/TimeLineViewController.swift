@@ -41,15 +41,15 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
                 }
                 let array:NSArray = self.timelineData.reverseObjectEnumerator().allObjects
                 //self.timelineData = array as! NSMutableArray
-                println(array)
+                //println(array)
                 
                 //ここのtimelineDataにarrayが入ってない
                 //self.timelineData = NSMutableArray(array: array)
                 
                 self.timelineData = NSMutableArray(array: array)
                 
-                println("timelineだよー")
-                println(self.timelineData)
+                //println("timelineだよー")
+                //println(self.timelineData)
                 self.tableView.reloadData()
             }
         }
@@ -57,7 +57,7 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
 
 
     override func viewWillAppear(animated: Bool) {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 233.0/255.0, alpha: 1.0)
             loadData()
     }
     
@@ -90,11 +90,11 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell :TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("timelineCell", forIndexPath: indexPath) as! TimeLineTableViewCell
         let talks :PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
-        println("talksだよー")
+        //println("talksだよー")
         println(talks)
         cell.title.text = talks.objectForKey("title") as? String
         cell.sideEffect.text = talks.objectForKey("SideEffect") as? String
-        println(talks.objectForKey("title"))
+        //println(talks.objectForKey("title"))
         
         return cell
     }

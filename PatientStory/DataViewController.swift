@@ -23,7 +23,7 @@ class DataViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     override func viewDidAppear(animated: Bool) {
-        //self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {

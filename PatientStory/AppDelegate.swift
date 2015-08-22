@@ -56,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             */
         }
         
-        UINavigationBar.appearance().barTintColor = UIColor(hue: 229/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
+        //UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
         
         
         application.applicationIconBadgeNumber = 0

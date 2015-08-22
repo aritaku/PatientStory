@@ -45,6 +45,7 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate {
     @IBAction func registDataButton(sender: AnyObject) {
         writeData()
         //self.navigationItem.setHidesBackButton(true, animated: false)
+        performSegueWithIdentifier("toRegistMedicineView", sender: nil)
     }
 
     

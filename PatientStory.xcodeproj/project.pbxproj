@@ -45,7 +45,6 @@
 		9A37F7A91B8658CE00E996E6 /* SideEffectSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7A81B8658CD00E996E6 /* SideEffectSurveyViewController.swift */; };
 		9A37F7AB1B86D8BC00E996E6 /* Compliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */; };
 		9A37F7AD1B86D8D700E996E6 /* SideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */; };
-		9A37F7B51B8751BD00E996E6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7B41B8751BD00E996E6 /* UserTableViewCell.swift */; };
 		9A37F7BA1B88028200E996E6 /* DetailTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A37F7B91B88028200E996E6 /* DetailTimeLineViewController.swift */; };
 		9A5744DE1B6F7FBC004F392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DD1B6F7FBC004F392C /* AppDelegate.swift */; };
 		9A5744E11B6F7FBC004F392C /* PatientStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5744DF1B6F7FBC004F392C /* PatientStory.xcdatamodeld */; };
@@ -116,7 +115,6 @@
 		9A37F7A81B8658CD00E996E6 /* SideEffectSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideEffectSurveyViewController.swift; sourceTree = "<group>"; };
 		9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compliance.swift; sourceTree = "<group>"; };
 		9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideEffect.swift; sourceTree = "<group>"; };
-		9A37F7B41B8751BD00E996E6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		9A37F7B91B88028200E996E6 /* DetailTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTimeLineViewController.swift; sourceTree = "<group>"; };
 		9A5744D81B6F7FBC004F392C /* PatientStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5744DC1B6F7FBC004F392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -233,7 +231,6 @@
 			children = (
 				9A37F7A01B863A5100E996E6 /* UserViewController.swift */,
 				9AD19A9B1B807D5100EB2A42 /* UsersDetailViewController.swift */,
-				9A37F7B41B8751BD00E996E6 /* UserTableViewCell.swift */,
 			);
 			name = Users;
 			sourceTree = "<group>";
@@ -492,7 +489,6 @@
 				9A37F7A91B8658CE00E996E6 /* SideEffectSurveyViewController.swift in Sources */,
 				9A25294B1B7CB48A007CC19C /* TimeLineViewController.swift in Sources */,
 				9A0F0F251B834542006F76B0 /* ComposeViewController.swift in Sources */,
-				9A37F7B51B8751BD00E996E6 /* UserTableViewCell.swift in Sources */,
 				9A2529471B7CB467007CC19C /* HomeViewController.swift in Sources */,
 				9AD19A9C1B807D5100EB2A42 /* UsersDetailViewController.swift in Sources */,
 				9A25294F1B7DC016007CC19C /* User.swift in Sources */,

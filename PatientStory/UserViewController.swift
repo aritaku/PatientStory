@@ -8,18 +8,18 @@
 
 import UIKit
 
-class UserViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class UserViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    let labelNames :[String] = ["ユーザー名", "性別", "年齢", "服用薬", "疾患名", "既往歴"]
+    //@IBOutlet weak var tableView: UITableView!
+    //let labelNames :[String] = ["ユーザー名", "性別", "年齢", "服用薬", "疾患名", "既往歴"]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+//        self.tableView.delegate = self
+//        self.tableView.dataSource = self
         
     }
 
@@ -29,10 +29,21 @@ class UserViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 229.0/255.0, green: 223.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 249.0/255.0, green: 223.0/255.0, blue: 233.0/255.0, alpha: 1.0)
         
     }
     
+   
+    
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "toEditView") {
+        }
+    }
+    */
+
+    
+    /*
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -47,15 +58,11 @@ class UserViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
-    
-    /*
+    */
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
