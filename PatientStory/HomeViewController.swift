@@ -12,7 +12,7 @@ import CoreData
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, NSFetchedResultsControllerDelegate {
     
     var medicineNames :[String] = []
-    var medicineHistories :[NSDictionary] = []
+    var medicineHistories :[NSManagedObject] = []
     
     @IBOutlet var tableView:UITableView!
     @IBOutlet var collectionView :UICollectionView!
@@ -75,6 +75,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell :HomeTableViewCell = tableView.dequeueReusableCellWithIdentifier("medicine_cell", forIndexPath: indexPath) as! HomeTableViewCell
         cell.medicine_nameLabel.text = "\(medicineNames[indexPath.row])"
+        
+        if (cell.medicine_nameLabel.text == "ゼローダ"){
+            cell.imageView?.image = UIImage(named: "xel100ptp_2_s")
+        } else if (cell.medicine_nameLabel.text == "ティーエスワン") {
+        
+        }
+        
         return cell
     }
     
@@ -90,23 +97,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let collectionCell :HomeCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("historyCell", forIndexPath: indexPath) as! HomeCollectionViewCell
         
-        let now = NSDate()
         let dateFormatter = NSDateFormatter()
         dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")
         dateFormatter.dateFormat = "MM/dd"
+        
+        let now = NSDate()
         collectionCell.dateLabel?.text = dateFormatter.stringFromDate(now)
         
         /*
-        if (medicineHistories == true ){
-            collectionCell.numberLabel?.text = "◯"
-        }
+        collectionCell.dateLabel?.text = dateFormatter.stringFromDate(medicineHistories["date"])
+        collectionCell.numberLabel?.text = medicineHistories[indexPath.row]["evening"]
         */
-        
-        //let compliance = fetchedResultController.objectAtIndexPath(indexPath) as! Compliance
-        //collectionCell.numberLabel?.text = compliance.morning
-        
-        //println(medicineHistories)
-        //collectionCell.numberLabel?.text = "\(medicineHistories["morning"])"
         return collectionCell
     }
     
@@ -137,8 +138,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         medicineHistories = []
         
         for myData in myResults {
-            medicineHistories.append(myData as! NSDictionary)
+            //medicineHistories.append(myData as! NSDictionary)
+            medicineHistories.append(myData as! NSManagedObject)
         }
+        println(medicineHistories)
         collectionView.reloadData()
     }
     

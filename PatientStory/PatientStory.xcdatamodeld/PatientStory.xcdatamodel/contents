@@ -18,8 +18,10 @@
     </entity>
     <entity name="SideEffect" representedClassName="PatientStory.SideEffect" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="grade" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fatigue" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hukutuu" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="kanai" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="kounai" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="medicineToSideEffect" inverseEntity="Medicine" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName="PatientStory.User" syncable="YES">
@@ -34,7 +36,7 @@
     <elements>
         <element name="Compliance" positionX="385" positionY="-99" width="128" height="118"/>
         <element name="Medicine" positionX="144" positionY="-25" width="117" height="148"/>
-        <element name="SideEffect" positionX="387" positionY="101" width="128" height="103"/>
+        <element name="SideEffect" positionX="387" positionY="101" width="128" height="135"/>
         <element name="User" positionX="-99" positionY="-40" width="128" height="148"/>
     </elements>
 </model>

@@ -20,10 +20,10 @@ class UsersDetailViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func userName(sender: AnyObject) {
         
-        var userProfile: PFObject = PFObject(className: "User")
+        //var userProfile: PFObject = PFObject.fetchInBackground()
         
-        userProfile["username"] = userNameTextField.text
-        userProfile.saveInBackground()
+        //userProfile["username"] = userNameTextField.text
+        //userProfile.saveInBackground()
         // Return to table view
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -67,6 +67,9 @@ class UsersDetailViewController: UIViewController, UITextFieldDelegate {
         sexTextField.delegate = self
         illnessTextField.delegate = self
         medicineTextField.delegate = self
+        
+        let currentUser : PFUser = PFUser.currentUser()!
+        println(currentUser)
         
     }
 

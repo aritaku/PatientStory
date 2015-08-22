@@ -43,7 +43,7 @@ class SurveyViewController: UIViewController {
     }
     
     @IBAction func registerButton(sender: AnyObject){
-        //writeData()
+        writeData()
         self.navigationController?.popViewControllerAnimated(true)
     }
     
@@ -58,9 +58,14 @@ class SurveyViewController: UIViewController {
         
         if (morningSegment?.selectedSegmentIndex == 1){
             newData.morning = "◯"
+        } else {
+            newData.morning = "×"
         }
+        
         if (eveningSegment?.selectedSegmentIndex == 1){
             newData.evening = "◯"
+        } else {
+            newData.evening = "×"
         }
     }
     

@@ -68,7 +68,6 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate, UIPic
     
     @IBAction func registDataButton(sender: AnyObject) {
         writeData()
-        //self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationController?.popViewControllerAnimated(true)
     }
 
