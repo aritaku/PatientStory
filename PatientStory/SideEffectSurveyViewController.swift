@@ -9,6 +9,8 @@
 import UIKit
 
 class SideEffectSurveyViewController: UIViewController {
+    
+    //全然手をつけられてないView
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@ import UIKit
 
 class DetailTimeLineViewController: UIViewController {
     
-    //やる
+    //手付かずのView
 
     override func viewDidLoad() {
         super.viewDidLoad()

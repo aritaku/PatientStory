@@ -29,9 +29,6 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func loadData(){
-        //timelineData.removeAllObjects()
-        
-        // Tweetsテーブルを呼び出す
         var findTimelineData:PFQuery = PFQuery(className: "Talk")
         
         findTimelineData.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error:NSError?) -> Void in
@@ -43,16 +40,7 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
                     }
                 }
                 let array:NSArray = self.timelineData.reverseObjectEnumerator().allObjects
-                //self.timelineData = array as! NSMutableArray
-                //println(array)
-                
-                //ここのtimelineDataにarrayが入ってない
-                //self.timelineData = NSMutableArray(array: array)
-                
                 self.timelineData = NSMutableArray(array: array)
-                
-                //println("timelineだよー")
-                //println(self.timelineData)
                 self.tableView.reloadData()
             }
         }
@@ -69,7 +57,6 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
         
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.reloadData()
         timelineData = NSMutableArray()
         loadData()
     }
@@ -93,12 +80,9 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell :TimeLineTableViewCell = tableView.dequeueReusableCellWithIdentifier("timelineCell", forIndexPath: indexPath) as! TimeLineTableViewCell
         let talks :PFObject = self.timelineData.objectAtIndex(indexPath.row) as! PFObject
-        //println("talksだよー")
         println(talks)
         cell.title.text = talks.objectForKey("title") as? String
         cell.sideEffect.text = talks.objectForKey("SideEffect") as? String
-        //println(talks.objectForKey("title"))
-        
         return cell
     }
     

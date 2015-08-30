@@ -81,12 +81,11 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate, UIPic
         var newData = Medicine(entity :myEntity, insertIntoManagedObjectContext :myContext)
         newData.name = nameTextField!.text
         newData.start_date = NSDate()
-//        newData.end_date = endDateTextField?.text
-//        newData.time = timingTextField?.text
     }
 
     
     //MARK: - PickerView
+    //薬名を選択する際のPickerViewの挙動がおかしい
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -105,6 +104,7 @@ class MedicineRegistViewController: UIViewController, UITextFieldDelegate, UIPic
 
     }
     
+    //このメソッドを改善する必要があるかも
     func tappedToolBarBtn() {
         self.nameTextField!.resignFirstResponder()
     }

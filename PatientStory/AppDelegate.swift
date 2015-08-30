@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             clientKey: "4QTXV5tDzyNO2qPFlOml7YThYYFZxqrnKsgi3U4K")
         
         // Register for Push Notitications
+        //ParseからのRemote Notification設定部分
         if application.applicationState != UIApplicationState.Background {
             
             let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
@@ -56,9 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             */
         }
         
-        //UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
-        
-        
+        //アイコンの右上に表示される通知バッジの数の管理
         application.applicationIconBadgeNumber = 0
         application.cancelAllLocalNotifications()
     

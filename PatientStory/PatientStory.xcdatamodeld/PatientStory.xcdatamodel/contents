@@ -14,7 +14,7 @@
         <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="medicineToCompliance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Compliance" inverseName="newRelationship" inverseEntity="Compliance" syncable="YES"/>
         <relationship name="medicineToSideEffect" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SideEffect" inverseName="newRelationship" inverseEntity="SideEffect" syncable="YES"/>
-        <relationship name="userToMedicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="newRelationship" inverseEntity="User" syncable="YES"/>
+        <relationship name="userToMedicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="toMedicine" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="SideEffect" representedClassName="PatientStory.SideEffect" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -31,12 +31,12 @@
         <attribute name="medicine" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="userToMedicine" inverseEntity="Medicine" syncable="YES"/>
+        <relationship name="toMedicine" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medicine" inverseName="userToMedicine" inverseEntity="Medicine" syncable="YES"/>
     </entity>
     <elements>
         <element name="Compliance" positionX="385" positionY="-99" width="128" height="118"/>
         <element name="Medicine" positionX="144" positionY="-25" width="117" height="148"/>
         <element name="SideEffect" positionX="387" positionY="101" width="128" height="135"/>
-        <element name="User" positionX="-99" positionY="-40" width="128" height="148"/>
+        <element name="User" positionX="-99" positionY="-40" width="128" height="150"/>
     </elements>
 </model>

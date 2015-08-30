@@ -15,6 +15,7 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var BodyTextView: UITextView!
     
     
+    //Parseにデータの登録
     @IBAction func compose(sender: AnyObject) {
         
         var tweet: PFObject = PFObject(className: "Talk")
@@ -52,6 +53,8 @@ class ComposeViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //MARK: - UITextFieldDelegate
     func doneBtnDidPush(){
         self.BodyTextView.resignFirstResponder()
     }

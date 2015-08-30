@@ -16,6 +16,9 @@ class UsersDetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var medicineTextField: UITextField!
     @IBOutlet weak var illnessTextField: UITextField!
     @IBOutlet weak var medicalHistory: UITextView!
+    
+    //現在のメソッドの記述だとログインしたユーザーデータとは別のユーザークラスを作成してしまう。
+    //ログインしているユーザーデータをcurrentUser()で呼び出して、そのユーザーデータをupdateする仕様に書き換える
 
     
     @IBAction func userName(sender: AnyObject) {

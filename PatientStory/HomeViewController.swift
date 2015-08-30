@@ -38,7 +38,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //println(managedObjectContext)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
 //        UINavigationBar.appearance().barTintColor = UIColor(hue: 249/255, saturation: 223/255, brightness: 233/255, alpha: 1.0)
         
         readData()
@@ -104,6 +104,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let now = NSDate()
         collectionCell.dateLabel?.text = dateFormatter.stringFromDate(now)
         
+        
+        //まだCoreDataからの服薬データの読み出し部分ができてない
+        //medicinHistories=[NSManagedObject]からNSManagedObjectを取り出す部分がうまくいってない @ readData()メソッド
         /*
         collectionCell.dateLabel?.text = dateFormatter.stringFromDate(medicineHistories["date"])
         collectionCell.numberLabel?.text = medicineHistories[indexPath.row]["evening"]
@@ -111,6 +114,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return collectionCell
     }
     
+    //登録した薬名を読み出すメソッド
     func readData(){
         let appDel :AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let myContext :NSManagedObjectContext = appDel.managedObjectContext!
@@ -127,6 +131,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
     
+    //服薬データを読み出すメソッド
+    //まだうまく機能していない
     func readCollectionData() {
         let appDel :AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let myContext :NSManagedObjectContext = appDel.managedObjectContext!

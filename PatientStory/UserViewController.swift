@@ -10,6 +10,8 @@ import UIKit
 
 class UserViewController: UIViewController {
     
+    //本来はParseよりユーザーデータを読み出して表示
+    
     //@IBOutlet weak var tableView: UITableView!
     //let labelNames :[String] = ["ユーザー名", "性別", "年齢", "服用薬", "疾患名", "既往歴"]
     
