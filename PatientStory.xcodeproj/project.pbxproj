@@ -250,6 +250,7 @@
 		9A2529221B75A772007CC19C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A2529191B75A430007CC19C /* libsqlite3.dylib */,
 				9A2529171B75A417007CC19C /* libz.dylib */,
 				9A25292F1B7608AF007CC19C /* Bolts.framework */,
 				9A2529301B7608AF007CC19C /* Parse.framework */,
@@ -259,14 +260,13 @@
 				9A2529341B7608AF007CC19C /* ParseUI.framework */,
 				9A2529151B75A40C007CC19C /* SystemConfiguration.framework */,
 				9A2529131B75A3E2007CC19C /* Security.framework */,
+				9A2529071B7599AA007CC19C /* StoreKit.framework */,
 				9A2529111B75A3D7007CC19C /* QuartzCore.framework */,
 				9A25290F1B75A3CC007CC19C /* CoreGraphics.framework */,
 				9A25290D1B75A3BF007CC19C /* CFNetwork.framework */,
-				9A25290B1B75A3B4007CC19C /* AudioToolbox.framework */,
-				9A2529071B7599AA007CC19C /* StoreKit.framework */,
-				9A2529041B759988007CC19C /* HealthKit.framework */,
-				9A2529191B75A430007CC19C /* libsqlite3.dylib */,
 				9A25291B1B75A441007CC19C /* Accounts.framework */,
+				9A25290B1B75A3B4007CC19C /* AudioToolbox.framework */,
+				9A2529041B759988007CC19C /* HealthKit.framework */,
 				9A25291D1B75A44E007CC19C /* Social.framework */,
 			);
 			name = Frameworks;

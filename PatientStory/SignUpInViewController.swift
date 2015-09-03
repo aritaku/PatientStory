@@ -71,7 +71,6 @@ class SignUpInViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-        
     }
     
     @IBAction func SignIn(sender: AnyObject) {
