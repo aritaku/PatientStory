@@ -1,23 +1,19 @@
 //
-//  User.swift
+//  userModel_realm.swift
 //  PatientStory
 //
-//  Created by 有村 琢磨 on 2015/08/14.
+//  Created by 有村 琢磨 on 2015/09/12.
 //  Copyright (c) 2015年 有村 琢磨. All rights reserved.
 //
 
-import UIKit
-import CoreData
+import RealmSwift
 
-@objc(User)
-class User: NSManagedObject {
-   
-    @NSManaged var name:String?
-    @NSManaged var sex :String?
-    @NSManaged var medicine :String?
-    @NSManaged var age :Int
-    @NSManaged var medicalHitory :String
-    @NSManaged var illnessName :String
-    
-    
+class User: Object {
+    dynamic var name = ""
+    dynamic var id = ""
+    dynamic var age = ""
+    dynamic var sex = ""
+    dynamic var height = ""
+    dynamic var weight = ""
 }
+

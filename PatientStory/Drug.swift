@@ -1,5 +1,5 @@
 //
-//  SideEffect.swift
+//  Drug.swift
 //  PatientStory
 //
 //  Created by 有村 琢磨 on 2015/09/13.
@@ -8,8 +8,10 @@
 
 import RealmSwift
 
-class SideEffect: Object {
+class Drug: Object {
     dynamic var id = ""
-    dynamic var sideEffect = ""
-    dynamic var date = ""
+    dynamic var drugName = ""
+    dynamic var startDate = ""
+    dynamic var endDate = ""
+    dynamic var amount = ""
 }
