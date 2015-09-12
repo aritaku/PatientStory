@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A07A49E1BA43D5C001B816D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A07A49C1BA43D5C001B816D /* Realm.framework */; };
+		9A07A49F1BA43D5C001B816D /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A07A49D1BA43D5C001B816D /* RealmSwift.framework */; };
+		9A07A4A11BA43DD5001B816D /* userModel_realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A07A4A01BA43DD4001B816D /* userModel_realm.swift */; };
 		9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */; };
 		9A0F0F231B8341CE006F76B0 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */; };
 		9A0F0F251B834542006F76B0 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F0F241B834542006F76B0 /* ComposeViewController.swift */; };
@@ -81,6 +84,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A07A49C1BA43D5C001B816D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		9A07A49D1BA43D5C001B816D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		9A07A4A01BA43DD4001B816D /* userModel_realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userModel_realm.swift; sourceTree = "<group>"; };
 		9A0F0F1F1B829DDE006F76B0 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A0F0F221B8341CE006F76B0 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		9A0F0F241B834542006F76B0 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 				9A25291C1B75A441007CC19C /* Accounts.framework in Frameworks */,
 				9A25291A1B75A430007CC19C /* libsqlite3.dylib in Frameworks */,
 				9A2529181B75A417007CC19C /* libz.dylib in Frameworks */,
+				9A07A49F1BA43D5C001B816D /* RealmSwift.framework in Frameworks */,
 				9A2529161B75A40C007CC19C /* SystemConfiguration.framework in Frameworks */,
 				9A2529141B75A3E2007CC19C /* Security.framework in Frameworks */,
 				9A2529121B75A3D7007CC19C /* QuartzCore.framework in Frameworks */,
@@ -173,6 +180,7 @@
 				9A2529391B7608B0007CC19C /* ParseFacebookUtilsV4.framework in Frameworks */,
 				9A2529381B7608B0007CC19C /* ParseFacebookUtils.framework in Frameworks */,
 				9A2529081B7599AA007CC19C /* StoreKit.framework in Frameworks */,
+				9A07A49E1BA43D5C001B816D /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				9A25294E1B7DC016007CC19C /* User.swift */,
+				9A07A4A01BA43DD4001B816D /* userModel_realm.swift */,
 				9AD19A931B7F95BE00EB2A42 /* Medicine.swift */,
 				9A37F7AA1B86D8BC00E996E6 /* Compliance.swift */,
 				9A37F7AC1B86D8D700E996E6 /* SideEffect.swift */,
@@ -250,6 +259,8 @@
 		9A2529221B75A772007CC19C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A07A49C1BA43D5C001B816D /* Realm.framework */,
+				9A07A49D1BA43D5C001B816D /* RealmSwift.framework */,
 				9A2529191B75A430007CC19C /* libsqlite3.dylib */,
 				9A2529171B75A417007CC19C /* libz.dylib */,
 				9A25292F1B7608AF007CC19C /* Bolts.framework */,
@@ -502,6 +513,7 @@
 				9A8F2C661B8287BA00B00A8B /* SignUpInViewController.swift in Sources */,
 				9A37F7BA1B88028200E996E6 /* DetailTimeLineViewController.swift in Sources */,
 				9A0F0F231B8341CE006F76B0 /* SurveyViewController.swift in Sources */,
+				9A07A4A11BA43DD5001B816D /* userModel_realm.swift in Sources */,
 				9AD19A941B7F95BF00EB2A42 /* Medicine.swift in Sources */,
 				9A8F2C621B827DF000B00A8B /* TimeLineTableViewCell.swift in Sources */,
 				9A0F0F201B829DDE006F76B0 /* DataCollectionViewCell.swift in Sources */,
@@ -651,6 +663,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 					"$(PROJECT_DIR)/PatientStory/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PatientStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,6 +686,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1.7.5",
 					"$(PROJECT_DIR)/PatientStory/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = PatientStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

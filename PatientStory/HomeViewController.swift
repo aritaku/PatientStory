@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate, NSFetchedResultsControllerDelegate {
     
@@ -79,7 +80,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (cell.medicine_nameLabel.text == "ゼローダ"){
             cell.imageView?.image = UIImage(named: "xel100ptp_2_s")
         } else if (cell.medicine_nameLabel.text == "ティーエスワン") {
-        
+            cell.imageView?.image = UIImage(named: "093")
         }
         
         return cell
